@@ -1,0 +1,23 @@
+[
+  {
+    "title": "Modelado geológico y experimentación análoga",
+    "category": "Capacidad experimental",
+    "summary": "Plataformas experimentales y metodologías para analizar deformación, estructuras y evolución tectónica en distintos escenarios.",
+    "image": "assets/images/labs/analog-modeling-platform.jpg",
+    "imageAlt": "Plataforma experimental de modelado geológico"
+  },
+  {
+    "title": "Geodinámica y análisis regional",
+    "category": "Capacidad analítica",
+    "summary": "Estudio integrado de evolución tectónica, magmatismo, deformación regional y procesos andinos de escala cortical a litosférica.",
+    "image": "assets/images/gallery/hero-andean-institute.jpg",
+    "imageAlt": "Paisaje andino asociado a estudios regionales"
+  },
+  {
+    "title": "Paleontología, estratigrafía y archivo sedimentario",
+    "category": "Capacidad de laboratorio",
+    "summary": "Análisis de fósiles, palinología, microfósiles y secuencias sedimentarias para reconstrucciones paleoambientales y geológicas.",
+    "image": "assets/images/gallery/institutional-profile.jpg",
+    "imageAlt": "Trabajo de campo y observación de muestras geológicas"
+  }
+]

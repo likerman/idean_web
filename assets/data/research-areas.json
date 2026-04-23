@@ -1,0 +1,22 @@
+[
+  {
+    "title": "Tectónica andina y geología estructural",
+    "focus": "Cordillera y cuencas",
+    "summary": "Estudio de la formación de la Cordillera de los Andes, la arquitectura de cuencas y la evolución tectónica regional."
+  },
+  {
+    "title": "Paleontología, bioestratigrafía y sedimentología",
+    "focus": "Registro geológico",
+    "summary": "Investigación sobre fósiles, microfósiles, paleoambientes y secuencias sedimentarias en distintas cuencas de interés regional."
+  },
+  {
+    "title": "Geodinámica, volcanismo y riesgos geológicos",
+    "focus": "Procesos activos",
+    "summary": "Análisis de sistemas geodinámicos, volcanismo, deformación activa y evaluación científica de procesos con implicancias en riesgos."
+  },
+  {
+    "title": "Glaciología, geomorfología y procesos superficiales",
+    "focus": "Ambientes andinos",
+    "summary": "Abordaje de lagos glaciales, inestabilidad de laderas, evolución del paisaje y dinámica de ambientes de montaña."
+  }
+]

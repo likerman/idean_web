@@ -1,0 +1,98 @@
+{
+  "overview": {
+    "eyebrow": "Perfil institucional",
+    "title": "IDEAN como instituto UBA-CONICET de geociencias andinas",
+    "paragraphs": [
+      "El perfil institucional público de CONICET describe a IDEAN como una Unidad Ejecutora dedicada a entender la formación de la Cordillera de los Andes y su relación con los desplazamientos de la placa Sudamericana.",
+      "Ese marco de trabajo sitúa al instituto en una agenda científica orientada a la evolución de sistemas orogénicos, la paleogeografía andina, los recursos naturales y la evaluación de riesgos geológicos."
+    ],
+    "facts": [
+      {
+        "label": "Unidad",
+        "value": "Instituto de Estudios Andinos “Don Pablo Groeber”"
+      },
+      {
+        "label": "Gran área",
+        "value": "Ciencias Exactas y Naturales"
+      },
+      {
+        "label": "Disciplina principal",
+        "value": "Ciencias de la Tierra y relacionadas con el Medio Ambiente"
+      }
+    ]
+  },
+  "history": {
+    "title": "Identidad, trayectoria y nombre institucional",
+    "paragraphs": [
+      "La identidad del instituto está estrechamente vinculada a la tradición de la geología andina argentina y al legado científico de Don Pablo Groeber, figura central en la historia de la disciplina.",
+      "En septiembre de 2021 el instituto realizó una conferencia institucional para destacar la vida y obra de Groeber, en ocasión del undécimo aniversario de su creación, reforzando ese vínculo entre memoria disciplinar e identidad contemporánea."
+    ],
+    "highlights": [
+      {
+        "title": "Don Pablo Groeber",
+        "text": "Geólogo de referencia para los Andes argentino-chilenos y figura que da nombre al instituto."
+      },
+      {
+        "title": "Tradición académica",
+        "text": "Inserción en el ecosistema científico y docente de la Universidad de Buenos Aires y el CONICET."
+      },
+      {
+        "title": "Continuidad institucional",
+        "text": "Desarrollo de investigación, formación y producción científica en Ciencias de la Tierra."
+      }
+    ]
+  },
+  "authorities": {
+    "title": "Autoridades y referencias públicas",
+    "cards": [
+      {
+        "label": "Director actual",
+        "value": "Dr. Pablo José Pazos",
+        "note": "Dato tomado del perfil institucional público de CONICET."
+      },
+      {
+        "label": "Sede",
+        "value": "Ciudad Universitaria, Pabellón II, CABA",
+        "note": "Ubicación institucional publicada en fuentes públicas del instituto."
+      }
+    ]
+  },
+  "relationships": {
+    "title": "Inserción institucional",
+    "items": [
+      {
+        "title": "UBA",
+        "text": "El instituto forma parte del entramado científico vinculado a la Universidad de Buenos Aires y a la formación académica en Ciencias Geológicas y áreas afines."
+      },
+      {
+        "title": "FCEN",
+        "text": "Su actividad se inscribe en el ámbito de la Facultad de Ciencias Exactas y Naturales, con vínculos visibles con docencia, tesis y actividades académicas."
+      },
+      {
+        "title": "CONICET",
+        "text": "La dimensión de Unidad Ejecutora y su perfil institucional público refuerzan la pertenencia del instituto al sistema científico nacional."
+      }
+    ]
+  },
+  "governanceNote": {
+    "title": "Estructura institucional detallada",
+    "text": "La composición detallada de consejo, áreas de gobierno o estructura interna no se incorporó aún en esta versión porque no fue normalizada a partir de una fuente institucional pública consolidada. Se integrará en una fase posterior."
+  },
+  "documents": {
+    "title": "Documentos y referencias",
+    "items": [
+      {
+        "label": "Perfil institucional IDEAN (CONICET)",
+        "href": "https://convocatorias.conicet.gov.ar/wp-content/uploads/sites/3/PERFIL-IDEAN-1.pdf"
+      },
+      {
+        "label": "Sitio actual de IDEAN",
+        "href": "http://www.idean.gl.fcen.uba.ar/"
+      },
+      {
+        "label": "Nota institucional sobre Don Pablo Groeber",
+        "href": "https://www.idean.gl.fcen.uba.ar/2021/09/24/don-pablo-groeber-un-grande-de-la-geologia-andina/"
+      }
+    ]
+  }
+}
