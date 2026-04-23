@@ -12,12 +12,13 @@ export const siteConfig = {
   contact: {
     email: "idean@gl.fcen.uba.ar",
     phone: "+54 11 4576-3400 int. 200",
+    ubaInternal: "58336 / 58337",
     address: "Intendente Güiraldes 2160, Ciudad Universitaria, Pabellón II",
     city: "C1428EGA · Ciudad Autónoma de Buenos Aires, Argentina"
   },
   links: {
     officialSite: "http://www.idean.gl.fcen.uba.ar/",
-    conicetProfile: "https://convocatorias.conicet.gov.ar/wp-content/uploads/sites/3/PERFIL-IDEAN-1.pdf"
+    conicetProfile: "https://convocatorias.conicet.gov.ar/wp-content/uploads/sites/3/PERFIL-IDEAN.pdf"
   },
   navigation: [
     { label: "Inicio", href: "index.html" },
@@ -33,15 +34,20 @@ export const siteConfig = {
   footerNavigation: {
     principal: [
       { label: "Institucional", href: "institucional.html" },
+      { label: "Miembros", href: "miembros.html" },
       { label: "Investigación", href: "investigacion.html" },
       { label: "Laboratorios", href: "laboratorios.html" },
-      { label: "Producción científica", href: "produccion-cientifica.html" }
+      { label: "Producción científica", href: "produccion-cientifica.html" },
+      { label: "Servicios", href: "servicios.html" },
+      { label: "Novedades", href: "novedades.html" },
+      { label: "Contacto", href: "contacto.html" }
     ],
     institutional: [
       { label: "UBA", href: "https://www.uba.ar/" },
       { label: "FCEN", href: "https://exactas.uba.ar/" },
       { label: "CONICET", href: "https://www.conicet.gov.ar/" },
-      { label: "Perfil institucional", href: "https://convocatorias.conicet.gov.ar/wp-content/uploads/sites/3/PERFIL-IDEAN-1.pdf" }
+      { label: "Perfil institucional", href: "https://convocatorias.conicet.gov.ar/wp-content/uploads/sites/3/PERFIL-IDEAN.pdf" },
+      { label: "Archivo histórico", href: "http://www.idean.gl.fcen.uba.ar/" }
     ]
   },
   pages: {
@@ -55,19 +61,19 @@ export const siteConfig = {
       title: "Miembros",
       kicker: "Comunidad académica",
       lead:
-        "La estructura institucional reúne investigadores, investigadoras, docentes, becarios y tesistas. El directorio institucional detallado se normalizará en una fase posterior."
+        "La estructura institucional reúne investigadores, investigadoras, docentes, tesistas y referentes de grupos identificados en fuentes públicas. Esta versión organiza un directorio inicial en proceso de normalización."
     },
     investigacion: {
       title: "Investigación",
       kicker: "Áreas y enfoques",
       lead:
-        "Las líneas de investigación combinan tectónica, paleontología, geodinámica, sedimentología, glaciología y análisis regional con fuerte anclaje andino."
+        "Las líneas de investigación combinan tectónica, paleontología, geodinámica, sedimentología, glaciología y geología planetaria con fuerte anclaje andino."
     },
     laboratorios: {
       title: "Laboratorios y capacidades",
       kicker: "Plataformas científicas",
       lead:
-        "IDEAN articula laboratorios, grupos y capacidades metodológicas para el estudio de procesos geológicos complejos en ambientes andinos y cuencas relacionadas."
+        "IDEAN articula laboratorios, grupos y capacidades metodológicas para el estudio de procesos geológicos complejos en ambientes andinos, cuencas sedimentarias y sistemas planetarios."
     },
     "produccion-cientifica": {
       title: "Producción científica",

@@ -1,0 +1,128 @@
+{
+  "coverageNote": {
+    "title": "Cobertura parcial en normalización",
+    "text": "Esta primera versión reúne perfiles y referencias personales identificadas en fuentes públicas vinculadas a IDEAN. El directorio completo del instituto se ampliará cuando se consolide un relevamiento institucional integral."
+  },
+  "groups": [
+    {
+      "id": "autoridades",
+      "title": "Autoridades y referentes institucionales",
+      "description": "Perfiles con función institucional o dirección de grupos identificados en fuentes públicas.",
+      "people": [
+        {
+          "id": "pablo-pazos",
+          "name": "Dr. Pablo José Pazos",
+          "role": "Director del IDEAN · Investigador del CONICET",
+          "affiliation": "IDEAN · UBA · CONICET",
+          "area": "Icnología, sedimentología y sustrato",
+          "summary": "Identificado públicamente como director del instituto y referente del Grupo de Icnología, Sedimentología y Sustrato (GISS).",
+          "email": "idean@gl.fcen.uba.ar",
+          "relatedResearchAreas": ["paleontologia-sedimentologia", "procesos-superficiales-riesgos"],
+          "relatedLabs": ["giss"],
+          "sourceLabel": "Nota de Nex Ciencia sobre huellas fósiles",
+          "sourceUrl": "https://nexciencia.exactas.uba.ar/huellas-fosiles-estegosaurios-cuenca-neuquina-icnologia-pablo-pazos"
+        },
+        {
+          "id": "dario-lazo",
+          "name": "Dr. Darío G. Lazo",
+          "role": "Director del Laboratorio de Ecosistemas Marinos Fósiles",
+          "affiliation": "IDEAN · Departamento de Ciencias Geológicas · CONICET",
+          "area": "Paleontología y ecosistemas marinos fósiles",
+          "summary": "Director del laboratorio de Ecosistemas Marinos Fósiles según la información pública difundida por Exactas UBA.",
+          "relatedResearchAreas": ["paleontologia-sedimentologia"],
+          "relatedLabs": ["ecosistemas-marinos-fosiles"],
+          "sourceLabel": "Nota de Exactas UBA: Cuando la montaña era mar",
+          "sourceUrl": "https://exactas.uba.ar/?p=26072"
+        }
+      ]
+    },
+    {
+      "id": "investigadores",
+      "title": "Investigadores y docentes identificados en fuentes públicas",
+      "description": "Selección inicial de perfiles con mención pública verificable en actividades, notas o espacios académicos vinculados a IDEAN.",
+      "people": [
+        {
+          "id": "mauro-spagnuolo",
+          "name": "Dr. Mauro G. Spagnuolo",
+          "role": "Investigador Adjunto CONICET · Docente",
+          "affiliation": "IDEAN · UBA · CONICET",
+          "area": "Geología planetaria y geomorfología comparada",
+          "summary": "Investigador asociado a IDEAN y a la geología planetaria, con trabajo en Marte, Venus y comparación de procesos terrestres y planetarios.",
+          "relatedResearchAreas": ["geologia-planetaria", "tectonica-andina"],
+          "relatedLabs": ["geologia-planetaria"],
+          "sourceLabel": "Perfil público en +Talento Exactas y nota de Exactas UBA",
+          "sourceUrl": "https://exactas.uba.ar/evento/mastalento/inicio/charlas/"
+        },
+        {
+          "id": "diego-winocur",
+          "name": "Dr. Diego A. Winocur",
+          "role": "Laboratorio de Tectónica Andina · Grupo de Evaluación de Riesgos Naturales y Antrópicos",
+          "affiliation": "IDEAN · UBA · CONICET",
+          "area": "Riesgos geológicos, tectónica andina y evaluación del paisaje",
+          "summary": "Referente público del Grupo de Evaluación de Riesgos Naturales y Antrópicos vinculado al Laboratorio de Tectónica Andina.",
+          "email": "winocur@gl.fcen.uba.ar",
+          "relatedResearchAreas": ["tectonica-andina", "procesos-superficiales-riesgos"],
+          "relatedLabs": ["tectonica-andina"],
+          "sourceLabel": "Resumen de Jornadas Socioambientales 2023",
+          "sourceUrl": "https://exactas.uba.ar/evento/jornadas-socioambientales/resumenes-2023/crisis-ambiental-2/"
+        },
+        {
+          "id": "daniel-perez",
+          "name": "Dr. Daniel J. Pérez",
+          "role": "Integrante del Laboratorio de Tectónica Andina · Docencia de posgrado y doctorado",
+          "affiliation": "IDEAN · FCEN UBA",
+          "area": "Aplicación de sensores remotos en Geología",
+          "summary": "Responsable de un curso de posgrado y doctorado sobre remotos y su aplicación en Geología en el ámbito del Laboratorio de Tectónica Andina.",
+          "email": "daniel@gl.fcen.uba.ar",
+          "relatedResearchAreas": ["tectonica-andina"],
+          "relatedLabs": ["tectonica-andina"],
+          "sourceLabel": "Agenda de Exactas UBA",
+          "sourceUrl": "https://exactas.uba.ar/agenda/?mc_id=1448"
+        }
+      ]
+    },
+    {
+      "id": "formacion",
+      "title": "Formación avanzada y trayectorias académicas",
+      "description": "Tesis doctorales y de grado asociadas a IDEAN que permiten identificar trayectorias y líneas de formación.",
+      "people": [
+        {
+          "id": "lucia-sagripanti",
+          "name": "Dra. Lucía Sagripanti",
+          "role": "Tesis doctoral desarrollada en IDEAN",
+          "affiliation": "IDEAN",
+          "area": "Evolución tectónica del orógeno andino",
+          "summary": "Autora de una tesis doctoral sobre la evolución tectónica del orógeno andino entre 36° y 37° S, desarrollada en el ámbito del instituto.",
+          "relatedResearchAreas": ["tectonica-andina"],
+          "relatedLabs": ["tectonica-andina"],
+          "sourceLabel": "Biblioteca Digital Exactas UBA",
+          "sourceUrl": "https://bibliotecadigital.exactas.uba.ar/collection/tesis/document/tesis_n5698_Sagripanti"
+        },
+        {
+          "id": "andres-echaurren",
+          "name": "Dr. Andrés Echaurren González",
+          "role": "Tesis doctoral desarrollada en IDEAN",
+          "affiliation": "IDEAN",
+          "area": "Evolución tectónica andina en Patagonia norte",
+          "summary": "Autor de una tesis doctoral sobre evolución tectónica del sistema orogénico andino en Patagonia norte, asociada al instituto.",
+          "relatedResearchAreas": ["tectonica-andina"],
+          "relatedLabs": ["tectonica-andina"],
+          "sourceLabel": "Biblioteca Digital Exactas UBA",
+          "sourceUrl": "https://bibliotecadigital.exactas.uba.ar/collection/tesis/document/tesis_n6187_EchaurrenGonzalez"
+        },
+        {
+          "id": "maria-sofia-plastani",
+          "name": "Dra. María Sofía Plastani",
+          "role": "Tesis doctoral en SCAMa-IDEAN",
+          "affiliation": "IDEAN · Laboratorio de Sondeos de Ambientes Continentales y Marinos",
+          "area": "Paleolimnología y reconstrucción ambiental",
+          "summary": "Autora de una tesis doctoral en el laboratorio SCAMa sobre ostrácodos y paleolimnología del sur de la pampa bonaerense.",
+          "relatedResearchAreas": ["paleontologia-sedimentologia", "procesos-superficiales-riesgos"],
+          "relatedLabs": ["scama"],
+          "sourceLabel": "Biblioteca Digital Exactas UBA",
+          "sourceUrl": "https://bibliotecadigital.exactas.uba.ar/collection/tesis/document/tesis_n6092_Plastani"
+        }
+      ]
+    }
+  ]
+}

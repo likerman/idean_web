@@ -1,23 +1,122 @@
 [
   {
-    "title": "Modelado geológico y experimentación análoga",
-    "category": "Capacidad experimental",
-    "summary": "Plataformas experimentales y metodologías para analizar deformación, estructuras y evolución tectónica en distintos escenarios.",
+    "id": "tectonica-andina",
+    "slug": "tectonica-andina",
+    "title": "Laboratorio de Tectónica Andina",
+    "category": "Laboratorio",
+    "summary": "Espacio de trabajo orientado a tectónica, geología estructural, evolución andina y evaluación de riesgos geológicos.",
+    "description": "Aparece en múltiples fuentes públicas de IDEAN y Exactas UBA vinculado a tectónica regional, volcanismo andino, cursos de posgrado y grupos de evaluación de riesgos naturales y antrópicos.",
+    "capabilities": [
+      "Análisis tectónico y estructural",
+      "Estudios de riesgos geológicos y paisaje",
+      "Docencia de posgrado y formación avanzada"
+    ],
+    "methods": [
+      "Cartografía geológica",
+      "Análisis estructural",
+      "Integración regional y geomorfológica"
+    ],
+    "relatedResearchAreas": ["tectonica-andina", "procesos-superficiales-riesgos"],
+    "relatedPeople": ["diego-winocur", "daniel-perez", "lucia-sagripanti", "andres-echaurren"],
     "image": "assets/images/labs/analog-modeling-platform.jpg",
-    "imageAlt": "Plataforma experimental de modelado geológico"
+    "imageAlt": "Plataforma experimental y de análisis asociada a estudios tectónicos andinos",
+    "sourceLabel": "Fuentes públicas de Exactas UBA y Biblioteca Digital",
+    "sourceUrl": "https://exactas.uba.ar/evento/jornadas-socioambientales/resumenes-2023/crisis-ambiental-2/"
   },
   {
-    "title": "Geodinámica y análisis regional",
-    "category": "Capacidad analítica",
-    "summary": "Estudio integrado de evolución tectónica, magmatismo, deformación regional y procesos andinos de escala cortical a litosférica.",
-    "image": "assets/images/gallery/hero-andean-institute.jpg",
-    "imageAlt": "Paisaje andino asociado a estudios regionales"
-  },
-  {
-    "title": "Paleontología, estratigrafía y archivo sedimentario",
-    "category": "Capacidad de laboratorio",
-    "summary": "Análisis de fósiles, palinología, microfósiles y secuencias sedimentarias para reconstrucciones paleoambientales y geológicas.",
+    "id": "giss",
+    "slug": "giss",
+    "title": "Grupo de Icnología, Sedimentología y Sustrato (GISS)",
+    "category": "Grupo de investigación",
+    "summary": "Grupo dirigido por Pablo Pazos y vinculado a icnología, sedimentología y análisis del registro geológico y paleoambiental.",
+    "description": "Identificado en fuentes públicas como el grupo a cargo del director del instituto, con trabajo en huellas fósiles, paleoambientes y sedimentología de cuencas.",
+    "capabilities": [
+      "Icnología y sedimentología",
+      "Interpretación paleoambiental",
+      "Análisis del sustrato y de registros fósiles"
+    ],
+    "methods": [
+      "Trabajo de campo",
+      "Análisis sedimentológico",
+      "Interpretación icnológica"
+    ],
+    "relatedResearchAreas": ["paleontologia-sedimentologia"],
+    "relatedPeople": ["pablo-pazos"],
     "image": "assets/images/gallery/institutional-profile.jpg",
-    "imageAlt": "Trabajo de campo y observación de muestras geológicas"
+    "imageAlt": "Trabajo de campo y observación de materiales geológicos",
+    "sourceLabel": "Nota de Nex Ciencia",
+    "sourceUrl": "https://nexciencia.exactas.uba.ar/huellas-fosiles-estegosaurios-cuenca-neuquina-icnologia-pablo-pazos"
+  },
+  {
+    "id": "ecosistemas-marinos-fosiles",
+    "slug": "ecosistemas-marinos-fosiles",
+    "title": "Laboratorio de Ecosistemas Marinos Fósiles",
+    "category": "Laboratorio",
+    "summary": "Laboratorio orientado a paleontología marina, ecosistemas fósiles y reconstrucción de contextos geológicos del registro marino.",
+    "description": "Difundido públicamente por Exactas UBA con dirección de Darío G. Lazo e integrantes dedicados a paleontología y análisis del registro fósil marino.",
+    "capabilities": [
+      "Paleontología marina",
+      "Reconstrucción de ecosistemas fósiles",
+      "Formación de tesistas y estudiantes"
+    ],
+    "methods": [
+      "Análisis paleontológico",
+      "Trabajo con colecciones y materiales fósiles",
+      "Reconstrucción paleoambiental"
+    ],
+    "relatedResearchAreas": ["paleontologia-sedimentologia"],
+    "relatedPeople": ["dario-lazo"],
+    "image": "assets/images/gallery/hero-andean-institute.jpg",
+    "imageAlt": "Paisaje geológico asociado a estudios marinos fósiles y regionales",
+    "sourceLabel": "Nota de Exactas UBA: Cuando la montaña era mar",
+    "sourceUrl": "https://exactas.uba.ar/?p=26072"
+  },
+  {
+    "id": "scama",
+    "slug": "scama",
+    "title": "Laboratorio de Sondeos de Ambientes Continentales y Marinos (SCAMa)",
+    "category": "Laboratorio",
+    "summary": "Espacio asociado a estudios de paleolimnología, ostrácodos y reconstrucción de parámetros ambientales y climáticos.",
+    "description": "Identificado en la Biblioteca Digital de Exactas UBA a partir de tesis doctorales desarrolladas en IDEAN con foco en ambientes continentales y marinos.",
+    "capabilities": [
+      "Paleolimnología",
+      "Reconstrucción ambiental y climática",
+      "Estudio de ambientes continentales y marinos"
+    ],
+    "methods": [
+      "Sondeos sedimentarios",
+      "Análisis paleoambiental",
+      "Estudio de microfósiles"
+    ],
+    "relatedResearchAreas": ["paleontologia-sedimentologia", "procesos-superficiales-riesgos"],
+    "relatedPeople": ["maria-sofia-plastani"],
+    "image": "assets/images/gallery/contact-fieldwork.jpg",
+    "imageAlt": "Paisaje y trabajo de campo asociado a estudios ambientales",
+    "sourceLabel": "Biblioteca Digital Exactas UBA",
+    "sourceUrl": "https://bibliotecadigital.exactas.uba.ar/collection/tesis/document/tesis_n6092_Plastani"
+  },
+  {
+    "id": "geologia-planetaria",
+    "slug": "geologia-planetaria",
+    "title": "Laboratorio de Geología Planetaria",
+    "category": "Laboratorio en crecimiento",
+    "summary": "Laboratorio dedicado a comparar procesos geológicos terrestres con los de otros cuerpos del sistema solar, especialmente Marte.",
+    "description": "El espacio aparece en notas públicas de Exactas UBA y Nex Ciencia como una línea de trabajo en crecimiento asociada a Mauro Spagnuolo y a investigaciones sobre geomorfología planetaria.",
+    "capabilities": [
+      "Geomorfología planetaria",
+      "Comparación entre procesos terrestres y extraterrestres",
+      "Análisis de imágenes y radar"
+    ],
+    "methods": [
+      "Interpretación geomorfológica",
+      "Análisis remoto",
+      "Modelado comparado"
+    ],
+    "relatedResearchAreas": ["geologia-planetaria"],
+    "relatedPeople": ["mauro-spagnuolo"],
+    "image": "assets/images/gallery/hero-andean-institute.jpg",
+    "imageAlt": "Imagen de apoyo institucional para geología regional y comparada",
+    "sourceLabel": "Nota de Exactas UBA y Nex Ciencia",
+    "sourceUrl": "https://exactas.uba.ar/la-tierra-fuera-de-la-tierra/"
   }
 ]

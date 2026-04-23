@@ -1,22 +1,53 @@
 [
   {
+    "id": "tectonica-andina",
+    "slug": "tectonica-andina",
     "title": "Tectónica andina y geología estructural",
     "focus": "Cordillera y cuencas",
-    "summary": "Estudio de la formación de la Cordillera de los Andes, la arquitectura de cuencas y la evolución tectónica regional."
+    "summary": "Estudio de la formación de la Cordillera de los Andes, la arquitectura de cuencas y la evolución tectónica regional.",
+    "description": "La línea reúne estudios sobre deformación, evolución orogénica, volcanismo andino, cuencas sedimentarias y estructuras regionales en distintos segmentos de la cordillera y del antepaís.",
+    "keywords": ["tectónica", "orógeno andino", "cuencas", "estructura regional"],
+    "relatedLabs": ["tectonica-andina"],
+    "relatedPeople": ["diego-winocur", "daniel-perez", "lucia-sagripanti", "andres-echaurren"],
+    "relatedPublications": ["GLOF modelling of Torre Lake and its potential impact in El Chaltén"]
   },
   {
+    "id": "paleontologia-sedimentologia",
+    "slug": "paleontologia-sedimentologia",
     "title": "Paleontología, bioestratigrafía y sedimentología",
     "focus": "Registro geológico",
-    "summary": "Investigación sobre fósiles, microfósiles, paleoambientes y secuencias sedimentarias en distintas cuencas de interés regional."
+    "summary": "Investigación sobre fósiles, microfósiles, paleoambientes y secuencias sedimentarias en distintas cuencas de interés regional.",
+    "description": "Integra paleontología marina y continental, estudios icnológicos, estratigrafía y análisis sedimentológico para interpretar la historia geológica y paleoambiental de diversos sistemas.",
+    "keywords": ["paleontología", "sedimentología", "bioestratigrafía", "paleoambientes"],
+    "relatedLabs": ["giss", "ecosistemas-marinos-fosiles", "scama"],
+    "relatedPeople": ["pablo-pazos", "dario-lazo", "maria-sofia-plastani"],
+    "relatedPublications": [
+      "Sedimentological and ichnological characterization of muddy storm related deposits: The upper Hauterivian ramp of the Agrio Formation in the Neuquén Basin, Argentina",
+      "Palynology and micropaleontology of the cretaceous of the James Ross Basin, Antarctica. Review of current knowledge"
+    ]
   },
   {
-    "title": "Geodinámica, volcanismo y riesgos geológicos",
-    "focus": "Procesos activos",
-    "summary": "Análisis de sistemas geodinámicos, volcanismo, deformación activa y evaluación científica de procesos con implicancias en riesgos."
-  },
-  {
-    "title": "Glaciología, geomorfología y procesos superficiales",
+    "id": "procesos-superficiales-riesgos",
+    "slug": "procesos-superficiales-riesgos",
+    "title": "Procesos superficiales, glaciología y riesgos geológicos",
     "focus": "Ambientes andinos",
-    "summary": "Abordaje de lagos glaciales, inestabilidad de laderas, evolución del paisaje y dinámica de ambientes de montaña."
+    "summary": "Abordaje de lagos glaciales, inestabilidad de laderas, evolución del paisaje y dinámica de ambientes de montaña.",
+    "description": "La línea articula evaluación del riesgo geológico, peligrosidad natural, glaciares, sistemas fluviales y procesos de superficie en regiones andinas y patagónicas.",
+    "keywords": ["riesgo geológico", "glaciología", "procesos de superficie", "paisaje"],
+    "relatedLabs": ["tectonica-andina", "scama"],
+    "relatedPeople": ["pablo-pazos", "diego-winocur", "maria-sofia-plastani"],
+    "relatedPublications": ["GLOF modelling of Torre Lake and its potential impact in El Chaltén"]
+  },
+  {
+    "id": "geologia-planetaria",
+    "slug": "geologia-planetaria",
+    "title": "Geología planetaria y modelado comparado",
+    "focus": "Planetas y analogías terrestres",
+    "summary": "Estudio de geomorfología y estructuras en otros cuerpos del sistema solar a partir de herramientas y analogías geológicas.",
+    "description": "La geología planetaria se desarrolla en IDEAN a través de un laboratorio en crecimiento que compara procesos terrestres y planetarios, incluyendo Marte, estructuras eólicas, volcanismo y deformación.",
+    "keywords": ["Marte", "geomorfología planetaria", "modelado análogo", "astrogeología"],
+    "relatedLabs": ["geologia-planetaria"],
+    "relatedPeople": ["mauro-spagnuolo"],
+    "relatedPublications": []
   }
 ]

@@ -1,0 +1,50 @@
+[
+  {
+    "legacy": "/",
+    "new": "/index.html",
+    "status": "implemented",
+    "notes": "Nueva homepage institucional."
+  },
+  {
+    "legacy": "/los-andes/",
+    "new": "/investigacion.html",
+    "status": "discovery",
+    "notes": "Contenido temático histórico; hoy el acceso principal equivalente es Investigación."
+  },
+  {
+    "legacy": "/category/noticias/",
+    "new": "/novedades.html",
+    "status": "planned",
+    "notes": "Compatibilidad a resolver con redirect o regla de servidor."
+  },
+  {
+    "legacy": "/category/publicaciones/",
+    "new": "/produccion-cientifica.html",
+    "status": "planned",
+    "notes": "Compatibilidad a resolver con redirect o regla de servidor."
+  },
+  {
+    "legacy": "/2025/03/07/el-lago-torre-en-riesgo-podria-un-deslizamiento-provocar-una-inundacion-catastrofica/",
+    "new": "/noticia.html?slug=lago-torre-riesgo-inundacion",
+    "status": "planned",
+    "notes": "Artículo ya migrado; falta redirect histórico."
+  },
+  {
+    "legacy": "/2021/09/24/don-pablo-groeber-un-grande-de-la-geologia-andina/",
+    "new": "/noticia.html?slug=don-pablo-groeber-legado-geologia-andina",
+    "status": "planned",
+    "notes": "Artículo ya migrado; falta redirect histórico."
+  },
+  {
+    "legacy": "/2021/04/23/evolucion-tectono-estratigrafica-de-la-cordillera-de-la-costa-y-la-depresion-central-de-chile-central-sur-36o30-42os/",
+    "new": "/noticia.html?slug=evolucion-tectonica-costa-chile-centro-sur",
+    "status": "planned",
+    "notes": "Artículo ya migrado; falta redirect histórico."
+  },
+  {
+    "legacy": "/2016/05/13/amilcar-herrera-en-el-departamento-de-ciencias-geologicas-homenaje-al-geologo-y-pensador-latinoamericano/",
+    "new": "/noticia.html?slug=homenaje-amilcar-herrera",
+    "status": "planned",
+    "notes": "Artículo ya migrado; falta redirect histórico."
+  }
+]

@@ -1,0 +1,64 @@
+{
+  "intro": {
+    "title": "Contacto institucional",
+    "description": "Canales públicos de contacto y ubicación del Instituto de Estudios Andinos Don Pablo Groeber, consolidados a partir de registros institucionales de CONICET, biCYT y FCEN."
+  },
+  "cards": [
+    {
+      "label": "Correo institucional",
+      "value": "idean@gl.fcen.uba.ar",
+      "href": "mailto:idean@gl.fcen.uba.ar"
+    },
+    {
+      "label": "Teléfono",
+      "value": "(011) 4576-3400 int. 200",
+      "href": "tel:+541145763400"
+    },
+    {
+      "label": "Internos FCEN",
+      "value": "58336 / 58337",
+      "href": "https://exactas.uba.ar/directorio-telefonico/"
+    }
+  ],
+  "location": {
+    "title": "Ubicación",
+    "address": "Intendente Güiraldes 2160, Ciudad Universitaria, Pabellón II",
+    "city": "C1428EGA · Ciudad Autónoma de Buenos Aires, Argentina",
+    "mapLabel": "Ver ubicación en mapa",
+    "mapUrl": "https://maps.google.com/?q=Intendente+Guiraldes+2160+Ciudad+Universitaria+Buenos+Aires"
+  },
+  "institutionalLinks": [
+    {
+      "label": "Perfil institucional CONICET",
+      "href": "https://convocatorias.conicet.gov.ar/wp-content/uploads/sites/3/PERFIL-IDEAN.pdf"
+    },
+    {
+      "label": "Ficha CONICET del instituto",
+      "href": "https://www.conicet.gov.ar/new_scp/detalle.php?id=23403&info_general=yes&inst=yes"
+    },
+    {
+      "label": "Directorio telefónico FCEN",
+      "href": "https://exactas.uba.ar/directorio-telefonico/"
+    },
+    {
+      "label": "Sitio histórico IDEAN",
+      "href": "http://www.idean.gl.fcen.uba.ar/"
+    }
+  ],
+  "visitNotes": [
+    "El instituto funciona en Ciudad Universitaria, Pabellón II, dentro del ecosistema académico de la Facultad de Ciencias Exactas y Naturales de la UBA.",
+    "Para consultas específicas sobre líneas de investigación, laboratorios o tesis, se recomienda utilizar primero el correo institucional y detallar el motivo del contacto."
+  ],
+  "authorities": [
+    {
+      "label": "Director",
+      "value": "Ernesto Osvaldo Cristallini",
+      "source": "CONICET / biCYT"
+    },
+    {
+      "label": "Vicedirectora",
+      "value": "Vanesa Dafne Litvak",
+      "source": "CONICET / biCYT"
+    }
+  ]
+}

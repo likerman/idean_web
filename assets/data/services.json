@@ -1,17 +1,60 @@
-[
-  {
-    "scope": "Formación",
-    "title": "Dirección y acompañamiento de tesis",
-    "summary": "Participación en formación de grado, posgrado y tesis en áreas vinculadas a las Ciencias de la Tierra."
+{
+  "overview": {
+    "title": "Servicios, capacidades y vinculación",
+    "description": "La sección organiza capacidades institucionales ya visibles en fuentes públicas del instituto y las presenta como un catálogo inicial en proceso de normalización."
   },
-  {
-    "scope": "Cooperación científica",
-    "title": "Articulación con universidades y centros de investigación",
-    "summary": "Trabajo conjunto con instituciones nacionales e internacionales en proyectos, campañas, publicaciones y redes académicas."
+  "coverageNote": {
+    "title": "Catálogo inicial en consolidación",
+    "text": "No se incorporó todavía un inventario exhaustivo de servicios tecnológicos o asesorías. En esta etapa se presentan capacidades institucionales verificables y puntos de contacto vinculados a laboratorios, formación y cooperación científica."
   },
-  {
-    "scope": "Aplicación",
-    "title": "Aportes a recursos naturales y riesgos geológicos",
-    "summary": "La comprensión de procesos andinos y cuencas sedimentarias aporta conocimiento relevante para recursos, ambiente y evaluación de riesgos."
-  }
-]
+  "items": [
+    {
+      "id": "formacion-tesis",
+      "scope": "Formación avanzada",
+      "title": "Dirección y acompañamiento de tesis",
+      "summary": "Participación en formación de grado, posgrado y tesis en áreas vinculadas a las Ciencias de la Tierra.",
+      "description": "La producción científica y los antecedentes públicos del instituto muestran una participación sostenida en tesis de grado, doctorado y actividades de formación asociadas a líneas de investigación andinas, paleontológicas, sedimentológicas y ambientales.",
+      "relatedLabs": ["tectonica-andina", "scama", "ecosistemas-marinos-fosiles"],
+      "relatedResearchAreas": ["tectonica-andina", "paleontologia-sedimentologia", "procesos-superficiales-riesgos"],
+      "contactPath": "contacto.html",
+      "sourceLabel": "Biblioteca Digital Exactas UBA",
+      "sourceUrl": "https://bibliotecadigital.exactas.uba.ar/"
+    },
+    {
+      "id": "cooperacion-cientifica",
+      "scope": "Cooperación científica",
+      "title": "Articulación con universidades y centros de investigación",
+      "summary": "Trabajo conjunto con instituciones nacionales e internacionales en proyectos, campañas, publicaciones y redes académicas.",
+      "description": "Las noticias, publicaciones y perfiles institucionales muestran colaboración con universidades, centros de investigación y otras unidades UBA-CONICET en temas de tectónica, geodinámica, paleontología, glaciología y geología planetaria.",
+      "relatedLabs": ["tectonica-andina", "geologia-planetaria", "giss"],
+      "relatedResearchAreas": ["tectonica-andina", "geologia-planetaria", "paleontologia-sedimentologia"],
+      "contactPath": "contacto.html",
+      "sourceLabel": "Perfil institucional CONICET",
+      "sourceUrl": "https://convocatorias.conicet.gov.ar/wp-content/uploads/sites/3/PERFIL-IDEAN.pdf"
+    },
+    {
+      "id": "asesoramiento-riesgos",
+      "scope": "Capacidad técnica",
+      "title": "Aportes científicos sobre riesgos geológicos y procesos activos",
+      "summary": "El instituto desarrolla capacidades aplicables a riesgos geológicos, paisajes inestables, lagos glaciales y procesos andinos activos.",
+      "description": "El trabajo público reciente sobre GLOF, tectónica andina y grupos de evaluación de riesgos naturales y antrópicos muestra capacidades relevantes para análisis de procesos geológicos activos y escenarios de riesgo.",
+      "relatedLabs": ["tectonica-andina"],
+      "relatedResearchAreas": ["procesos-superficiales-riesgos", "tectonica-andina"],
+      "contactPath": "contacto.html",
+      "sourceLabel": "Nota IDEAN sobre lago Torre",
+      "sourceUrl": "https://www.idean.gl.fcen.uba.ar/2025/03/07/el-lago-torre-en-riesgo-podria-un-deslizamiento-provocar-una-inundacion-catastrofica/"
+    },
+    {
+      "id": "plataformas-paleoambientales",
+      "scope": "Capacidad metodológica",
+      "title": "Análisis paleoambiental, paleontológico y sedimentológico",
+      "summary": "Capacidades institucionales vinculadas a paleoambientes, registro fósil, bioestratigrafía, icnología y reconstrucción de cuencas.",
+      "description": "La actividad pública de grupos y laboratorios del instituto muestra fortalezas en paleoambientes, ecosistemas marinos fósiles, icnología, sedimentología y sondeos de ambientes continentales y marinos.",
+      "relatedLabs": ["giss", "ecosistemas-marinos-fosiles", "scama"],
+      "relatedResearchAreas": ["paleontologia-sedimentologia"],
+      "contactPath": "contacto.html",
+      "sourceLabel": "Perfil institucional CONICET",
+      "sourceUrl": "https://convocatorias.conicet.gov.ar/wp-content/uploads/sites/3/PERFIL-IDEAN.pdf"
+    }
+  ]
+}

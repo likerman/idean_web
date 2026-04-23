@@ -77,7 +77,7 @@ function renderFooter() {
   const institutional = siteConfig.footerNavigation.institutional
     .map(
       (item) =>
-        `<li><a href="${item.href}" ${item.href.startsWith("http") ? 'target="_blank" rel="noreferrer"' : ""}>${item.label}</a></li>`
+        `<li><a href="${item.href}" ${item.href.startsWith("http") ? 'target="_blank" rel="noopener noreferrer"' : ""}>${item.label}</a></li>`
     )
     .join("");
 
@@ -186,6 +186,41 @@ function researchCard(item) {
   `;
 }
 
+function peopleLinks(person) {
+  const items = [];
+  if (person.email) items.push(`<a class="card__link-inline" href="mailto:${person.email}">${person.email}</a>`);
+  if (person.sourceUrl) {
+    items.push(`<a class="card__link-inline" href="${person.sourceUrl}" target="_blank" rel="noopener noreferrer">${person.sourceLabel}</a>`);
+  }
+  return items.join("");
+}
+
+function relationChips(items) {
+  if (!items || items.length === 0) return "";
+  return `<div class="chip-row">${items.map((item) => `<span class="chip">${item}</span>`).join("")}</div>`;
+}
+
+function personCard(person) {
+  return `
+    <article class="person-card">
+      <div class="person-card__header">
+        <div class="person-card__avatar" aria-hidden="true">
+          <img src="assets/images/institutional/seal-idean.png" alt="" />
+        </div>
+        <div>
+          <h3 class="person-card__name">${person.name}</h3>
+          <p class="person-card__role">${person.role}</p>
+        </div>
+      </div>
+      <p class="person-card__affiliation">${person.affiliation}</p>
+      <p class="person-card__area">${person.area}</p>
+      <p class="card__text">${person.summary}</p>
+      ${relationChips([...(person.relatedResearchAreasLabels ?? []), ...(person.relatedLabsLabels ?? [])])}
+      <div class="person-card__links">${peopleLinks(person)}</div>
+    </article>
+  `;
+}
+
 function labCard(item) {
   return `
     <article class="card card--lab">
@@ -208,7 +243,7 @@ function outputCard(item) {
       </div>
       <h3 class="card__title">${item.title}</h3>
       <p class="card__text">${item.summary}</p>
-      <a class="card__link" href="${item.href}" target="_blank" rel="noreferrer">Consultar</a>
+      <a class="card__link" href="${item.href}" target="_blank" rel="noopener noreferrer">Consultar</a>
     </article>
   `;
 }
@@ -223,7 +258,7 @@ function outputListItem(item, metaLabel) {
       <h3 class="list-item__title">${item.title}</h3>
       <p class="list-item__secondary">${item.authors || item.author || item.venue || ""}</p>
       <p class="list-item__text">${item.summary}</p>
-      <a class="card__link" href="${item.href}" target="_blank" rel="noreferrer">Consultar registro</a>
+      <a class="card__link" href="${item.href}" target="_blank" rel="noopener noreferrer">Consultar registro</a>
     </article>
   `;
 }
@@ -233,7 +268,7 @@ function resourceItem(item) {
     <article class="card card--compact">
       <h3 class="card__title">${item.title}</h3>
       <p class="card__text">${item.summary}</p>
-      <a class="card__link" href="${item.href}" target="_blank" rel="noreferrer">Abrir enlace</a>
+      <a class="card__link" href="${item.href}" target="_blank" rel="noopener noreferrer">Abrir enlace</a>
     </article>
   `;
 }
@@ -248,12 +283,48 @@ function infoCard(item) {
   `;
 }
 
+function findById(items, id) {
+  return items.find((item) => item.id === id);
+}
+
+function mapLabels(ids, items) {
+  if (!ids) return [];
+  return ids
+    .map((id) => findById(items, id))
+    .filter(Boolean)
+    .map((item) => item.title || item.name);
+}
+
 function serviceCard(item) {
   return `
     <article class="card card--compact">
       <p class="pill">${item.scope}</p>
       <h3 class="card__title">${item.title}</h3>
       <p class="card__text">${item.summary}</p>
+    </article>
+  `;
+}
+
+function serviceDetailCard(item, labs, researchAreas) {
+  const labLabels = mapLabels(item.relatedLabs, labs);
+  const researchLabels = mapLabels(item.relatedResearchAreas, researchAreas);
+
+  return `
+    <article class="service-card">
+      <div class="meta-row">
+        <span class="pill">${item.scope}</span>
+      </div>
+      <h3 class="service-card__title">${item.title}</h3>
+      <p class="service-card__summary">${item.description || item.summary}</p>
+      ${relationChips([...(labLabels ?? []), ...(researchLabels ?? [])])}
+      <div class="service-card__meta">
+        ${labLabels.length > 0 ? `<p><strong>Laboratorios relacionados:</strong> ${labLabels.join(", ")}</p>` : ""}
+        ${researchLabels.length > 0 ? `<p><strong>Áreas relacionadas:</strong> ${researchLabels.join(", ")}</p>` : ""}
+      </div>
+      <div class="service-card__actions">
+        <a class="button button--ghost button--small" href="${item.contactPath}">Canal de contacto</a>
+        <a class="card__link" href="${item.sourceUrl}" target="_blank" rel="noopener noreferrer">${item.sourceLabel}</a>
+      </div>
     </article>
   `;
 }
@@ -274,6 +345,20 @@ function contactPanel() {
         <div><dt>Dirección</dt><dd>${siteConfig.contact.address}<br />${siteConfig.contact.city}</dd></div>
       </dl>
     </section>
+  `;
+}
+
+function contactCard(item) {
+  const tag = item.href ? "a" : "span";
+  const attrs = item.href
+    ? `${tag === "a" ? `href="${item.href}"` : ""} ${item.href.startsWith("http") ? 'target="_blank" rel="noopener noreferrer"' : ""}`
+    : "";
+
+  return `
+    <article class="info-card">
+      <p class="info-card__label">${item.label}</p>
+      <${tag} class="contact-value" ${attrs}>${item.value}</${tag}>
+    </article>
   `;
 }
 
@@ -436,6 +521,214 @@ async function renderHome() {
   }
 }
 
+async function renderMembersPage() {
+  const [peopleData, researchAreas, labs] = await Promise.all([
+    fetchJson("assets/data/people.json"),
+    fetchJson("assets/data/research-areas.json"),
+    fetchJson("assets/data/labs.json")
+  ]);
+
+  const target = document.querySelector("[data-members-page]");
+  if (!target) return;
+
+  const groupsHtml = peopleData.groups
+    .map((group) => {
+      const normalizedPeople = group.people.map((person) => ({
+        ...person,
+        relatedResearchAreasLabels: mapLabels(person.relatedResearchAreas, researchAreas),
+        relatedLabsLabels: mapLabels(person.relatedLabs, labs)
+      }));
+
+      return `
+        <section class="editorial-block">
+          ${createSectionHeader({
+            eyebrow: "Miembros",
+            title: group.title,
+            description: group.description
+          })}
+          <div class="person-grid">
+            ${normalizedPeople.map(personCard).join("")}
+          </div>
+        </section>
+      `;
+    })
+    .join("");
+
+  target.innerHTML = `
+    <section class="editorial-block">
+      <article class="status-note">
+        <h2 class="section-header__title">${peopleData.coverageNote.title}</h2>
+        <p class="section-header__description">${peopleData.coverageNote.text}</p>
+      </article>
+    </section>
+    ${groupsHtml}
+  `;
+}
+
+function researchDetailBlock(area, labs, people) {
+  const labsLabels = mapLabels(area.relatedLabs, labs);
+  const peopleLabels = mapLabels(area.relatedPeople, people);
+
+  return `
+    <article class="research-detail">
+      <div class="research-detail__intro">
+        <p class="pill">${area.focus}</p>
+        <h3 class="research-detail__title">${area.title}</h3>
+        <p class="research-detail__summary">${area.description || area.summary}</p>
+      </div>
+      ${relationChips(area.keywords)}
+      <div class="research-detail__meta">
+        ${labsLabels.length > 0 ? `<p><strong>Laboratorios relacionados:</strong> ${labsLabels.join(", ")}</p>` : ""}
+        ${peopleLabels.length > 0 ? `<p><strong>Perfiles asociados:</strong> ${peopleLabels.join(", ")}</p>` : ""}
+        ${area.relatedPublications && area.relatedPublications.length > 0 ? `<p><strong>Producción vinculada:</strong> ${area.relatedPublications.join("; ")}</p>` : ""}
+      </div>
+    </article>
+  `;
+}
+
+async function renderResearchPage() {
+  const [researchAreas, labs, peopleData] = await Promise.all([
+    fetchJson("assets/data/research-areas.json"),
+    fetchJson("assets/data/labs.json"),
+    fetchJson("assets/data/people.json")
+  ]);
+
+  const target = document.querySelector("[data-research-page]");
+  if (!target) return;
+
+  const people = peopleData.groups.flatMap((group) => group.people);
+
+  target.innerHTML = `
+    <section class="editorial-block">
+      ${createSectionHeader({
+        eyebrow: "Panorama",
+        title: "Investigación organizada por líneas temáticas",
+        description:
+          "La sección consolida áreas científicas visibles en fuentes públicas del instituto y las vincula con laboratorios, perfiles y producción ya incorporada en el sitio."
+      })}
+      <div class="info-grid info-grid--three">
+        <article class="info-card">
+          <p class="info-card__label">Áreas</p>
+          <h3 class="info-card__value">${researchAreas.length}</h3>
+          <p class="info-card__note">Líneas principales normalizadas en esta fase.</p>
+        </article>
+        <article class="info-card">
+          <p class="info-card__label">Laboratorios vinculados</p>
+          <h3 class="info-card__value">${labs.length}</h3>
+          <p class="info-card__note">Plataformas y grupos conectados a la agenda científica.</p>
+        </article>
+        <article class="info-card">
+          <p class="info-card__label">Perfiles asociados</p>
+          <h3 class="info-card__value">${people.length}</h3>
+          <p class="info-card__note">Referencias personales públicas ya identificadas.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="editorial-block">
+      ${createSectionHeader({
+        eyebrow: "Líneas de investigación",
+        title: "Áreas prioritarias y dominios de trabajo",
+        description:
+          "Cada bloque resume una línea temática, sus métodos o dominios, y sus relaciones iniciales con laboratorios y personas."
+      })}
+      <div class="card-grid card-grid--research">
+        ${researchAreas.map(researchCard).join("")}
+      </div>
+    </section>
+
+    <section class="editorial-block">
+      ${createSectionHeader({
+        eyebrow: "Detalle",
+        title: "Desarrollo por línea",
+        description: "Lectura más completa de las áreas ya normalizadas para el nuevo sitio."
+      })}
+      <div class="stack-grid">
+        ${researchAreas.map((area) => researchDetailBlock(area, labs, people)).join("")}
+      </div>
+    </section>
+  `;
+}
+
+function capabilityList(items) {
+  if (!items || items.length === 0) return "";
+  return `<ul class="capability-list">${items.map((item) => `<li>${item}</li>`).join("")}</ul>`;
+}
+
+function labDetailBlock(lab, researchAreas, people) {
+  const researchLabels = mapLabels(lab.relatedResearchAreas, researchAreas);
+  const peopleLabels = mapLabels(lab.relatedPeople, people);
+
+  return `
+    <article class="lab-detail">
+      <div class="lab-detail__media">
+        <img src="${lab.image}" alt="${lab.imageAlt || lab.title}" />
+      </div>
+      <div class="lab-detail__body">
+        <div class="meta-row">
+          <span class="pill">${lab.category}</span>
+        </div>
+        <h3 class="lab-detail__title">${lab.title}</h3>
+        <p class="lab-detail__summary">${lab.description || lab.summary}</p>
+        <div class="two-column-layout two-column-layout--narrow">
+          <div>
+            <h4 class="subsection-title">Capacidades</h4>
+            ${capabilityList(lab.capabilities)}
+          </div>
+          <div>
+            <h4 class="subsection-title">Métodos y notas</h4>
+            ${capabilityList(lab.methods)}
+          </div>
+        </div>
+        <div class="lab-detail__meta">
+          ${researchLabels.length > 0 ? `<p><strong>Áreas relacionadas:</strong> ${researchLabels.join(", ")}</p>` : ""}
+          ${peopleLabels.length > 0 ? `<p><strong>Perfiles asociados:</strong> ${peopleLabels.join(", ")}</p>` : ""}
+        </div>
+        <a class="card__link" href="${lab.sourceUrl}" target="_blank" rel="noopener noreferrer">${lab.sourceLabel}</a>
+      </div>
+    </article>
+  `;
+}
+
+async function renderLabsPage() {
+  const [labs, researchAreas, peopleData] = await Promise.all([
+    fetchJson("assets/data/labs.json"),
+    fetchJson("assets/data/research-areas.json"),
+    fetchJson("assets/data/people.json")
+  ]);
+
+  const target = document.querySelector("[data-labs-page]");
+  if (!target) return;
+
+  const people = peopleData.groups.flatMap((group) => group.people);
+
+  target.innerHTML = `
+    <section class="editorial-block">
+      ${createSectionHeader({
+        eyebrow: "Panorama",
+        title: "Laboratorios, grupos y capacidades",
+        description:
+          "La sección separa laboratorios, grupos y capacidades metodológicas para evitar una lectura indiferenciada de servicios, áreas y equipos."
+      })}
+      <div class="card-grid card-grid--labs">
+        ${labs.map(labCard).join("")}
+      </div>
+    </section>
+
+    <section class="editorial-block">
+      ${createSectionHeader({
+        eyebrow: "Detalle",
+        title: "Plataformas y grupos relevados",
+        description:
+          "La información se apoya en referencias públicas de IDEAN, Exactas UBA, Nex Ciencia y Biblioteca Digital."
+      })}
+      <div class="stack-grid">
+        ${labs.map((lab) => labDetailBlock(lab, researchAreas, people)).join("")}
+      </div>
+    </section>
+  `;
+}
+
 async function renderInstitutionalPage() {
   const data = await fetchJson("assets/data/institutional.json");
   const target = document.querySelector("[data-institutional-page]");
@@ -538,7 +831,7 @@ async function renderInstitutionalPage() {
             (item) => `
               <article class="card card--compact">
                 <h3 class="card__title">${item.label}</h3>
-                <a class="card__link" href="${item.href}" target="_blank" rel="noreferrer">Abrir documento</a>
+                <a class="card__link" href="${item.href}" target="_blank" rel="noopener noreferrer">Abrir documento</a>
               </article>
             `
           )
@@ -574,7 +867,7 @@ async function renderNewsIndexPage() {
           <p class="featured-article__excerpt">${featured.excerpt}</p>
           <div class="featured-article__actions">
             <a class="button button--primary" href="${getNewsHref(featured)}">Leer artículo</a>
-            <a class="button button--ghost" href="${featured.sourceUrl}" target="_blank" rel="noreferrer">Fuente original</a>
+            <a class="button button--ghost" href="${featured.sourceUrl}" target="_blank" rel="noopener noreferrer">Fuente original</a>
           </div>
         </div>
       </article>
@@ -635,7 +928,7 @@ async function renderNewsArticle() {
 
       <footer class="article-footer">
         <a class="button button--ghost" href="novedades.html">Volver a novedades</a>
-        <a class="button button--primary" href="${article.sourceUrl}" target="_blank" rel="noreferrer">${article.sourceLabel}</a>
+        <a class="button button--primary" href="${article.sourceUrl}" target="_blank" rel="noopener noreferrer">${article.sourceLabel}</a>
       </footer>
     </article>
 
@@ -733,10 +1026,111 @@ async function renderScientificOutputPage() {
   `;
 }
 
-async function renderCollectionPage(fileName, selector, renderer) {
-  const data = await fetchJson(`assets/data/${fileName}`);
-  const target = document.querySelector(selector);
-  if (target) target.innerHTML = data.map(renderer).join("");
+async function renderServicesPage() {
+  const [servicesData, labs, researchAreas] = await Promise.all([
+    fetchJson("assets/data/services.json"),
+    fetchJson("assets/data/labs.json"),
+    fetchJson("assets/data/research-areas.json")
+  ]);
+
+  const target = document.querySelector("[data-services-page]");
+  if (!target) return;
+
+  target.innerHTML = `
+    <section class="editorial-block">
+      ${createSectionHeader({
+        eyebrow: "Servicios",
+        title: servicesData.overview.title,
+        description: servicesData.overview.description
+      })}
+      <article class="status-note">
+        <h2 class="section-header__title">${servicesData.coverageNote.title}</h2>
+        <p class="section-header__description">${servicesData.coverageNote.text}</p>
+      </article>
+    </section>
+
+    <section class="editorial-block">
+      ${createSectionHeader({
+        eyebrow: "Capacidades",
+        title: "Catálogo inicial de servicios y apoyo institucional",
+        description:
+          "Presentación de capacidades públicas ya identificadas y vinculadas con laboratorios, formación y cooperación científica."
+      })}
+      <div class="stack-grid">
+        ${servicesData.items.map((item) => serviceDetailCard(item, labs, researchAreas)).join("")}
+      </div>
+    </section>
+  `;
+}
+
+async function renderContactPage() {
+  const contactData = await fetchJson("assets/data/contact.json");
+  const target = document.querySelector("[data-contact-page]");
+  if (!target) return;
+
+  target.innerHTML = `
+    <section class="editorial-block">
+      ${createSectionHeader({
+        eyebrow: "Contacto",
+        title: contactData.intro.title,
+        description: contactData.intro.description
+      })}
+      <div class="info-grid info-grid--three">
+        ${contactData.cards.map(contactCard).join("")}
+      </div>
+    </section>
+
+    <section class="editorial-block">
+      <div class="two-column-layout">
+        <article class="contact-panel">
+          <h2 class="section-header__title">${contactData.location.title}</h2>
+          <p class="section-header__description">${contactData.location.address}</p>
+          <p class="body-copy">${contactData.location.city}</p>
+          <p><a class="card__link" href="${contactData.location.mapUrl}" target="_blank" rel="noopener noreferrer">${contactData.location.mapLabel}</a></p>
+          <div class="rich-text">
+            ${contactData.visitNotes.map((note) => `<p>${note}</p>`).join("")}
+          </div>
+        </article>
+
+        <article class="contact-panel">
+          <h2 class="section-header__title">Referencias institucionales</h2>
+          <div class="stack-grid">
+            ${contactData.authorities
+              .map(
+                (item) => `
+                  <article class="info-card">
+                    <p class="info-card__label">${item.label}</p>
+                    <h3 class="info-card__value">${item.value}</h3>
+                    <p class="info-card__note">${item.source}</p>
+                  </article>
+                `
+              )
+              .join("")}
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="editorial-block">
+      ${createSectionHeader({
+        eyebrow: "Enlaces",
+        title: "Canales y referencias útiles",
+        description: "Accesos a perfiles institucionales y recursos públicos vinculados al instituto."
+      })}
+      <div class="card-grid card-grid--compact">
+        ${contactData.institutionalLinks
+          .map(
+            (item) => `
+              <article class="card card--compact">
+                <h3 class="card__title">${item.label}</h3>
+                <a class="card__link" href="${item.href}" target="_blank" rel="noopener noreferrer">Abrir enlace</a>
+              </article>
+            `
+          )
+          .join("")}
+      </div>
+    </section>
+  `;
 }
 
 function renderPageHero() {
@@ -755,11 +1149,6 @@ function renderPageHero() {
   `;
 }
 
-function renderStaticContact() {
-  const target = document.querySelector("[data-contact-panel]");
-  if (target) target.innerHTML = contactPanel();
-}
-
 async function initPages() {
   if (page === "home") {
     await renderHome();
@@ -770,6 +1159,18 @@ async function initPages() {
 
   if (page === "institucional") {
     await renderInstitutionalPage();
+  }
+
+  if (page === "miembros") {
+    await renderMembersPage();
+  }
+
+  if (page === "investigacion") {
+    await renderResearchPage();
+  }
+
+  if (page === "laboratorios") {
+    await renderLabsPage();
   }
 
   if (page === "novedades") {
@@ -784,19 +1185,12 @@ async function initPages() {
     await renderScientificOutputPage();
   }
 
-  if (page === "investigacion") {
-    await renderCollectionPage("research-areas.json", "[data-page-collection]", researchCard);
-  }
-
-  if (page === "laboratorios") {
-    await renderCollectionPage("labs.json", "[data-page-collection]", labCard);
-  }
   if (page === "servicios") {
-    await renderCollectionPage("services.json", "[data-page-collection]", serviceCard);
+    await renderServicesPage();
   }
 
   if (page === "contacto") {
-    renderStaticContact();
+    await renderContactPage();
   }
 }
 
