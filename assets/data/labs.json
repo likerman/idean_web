@@ -4,119 +4,288 @@
     "slug": "tectonica-andina",
     "title": "Laboratorio de Tectónica Andina",
     "category": "Laboratorio",
-    "summary": "Espacio de trabajo orientado a tectónica, geología estructural, evolución andina y evaluación de riesgos geológicos.",
-    "description": "Aparece en múltiples fuentes públicas de IDEAN y Exactas UBA vinculado a tectónica regional, volcanismo andino, cursos de posgrado y grupos de evaluación de riesgos naturales y antrópicos.",
+    "summary": "Núcleo histórico del instituto dedicado al estudio de la evolución tectónica andina y de la cordillera argentino-chilena.",
+    "description": "Los estudios sistemáticos sobre la evolución tectónica de los Andes comenzaron en 1984 en el Departamento de Ciencias Geológicas de la UBA y formaron el núcleo inicial del laboratorio. Desde entonces, el espacio desarrolló levantamientos de la alta cordillera, investigaciones regionales y formación de recursos humanos que convirtieron al laboratorio en una referencia sudamericana para los estudios andinos.",
     "capabilities": [
-      "Análisis tectónico y estructural",
-      "Estudios de riesgos geológicos y paisaje",
-      "Docencia de posgrado y formación avanzada"
+      "Levantamientos geológicos y estructurales de la cordillera",
+      "Reconstrucción tectónica regional y análisis de basamento preandino",
+      "Formación de tesistas, becarios y jóvenes investigadores"
     ],
     "methods": [
-      "Cartografía geológica",
-      "Análisis estructural",
-      "Integración regional y geomorfológica"
+      "Trabajo de campo en fajas andinas y cuencas asociadas",
+      "Cartografía geológica y análisis estructural",
+      "Integración de datos regionales y discusión en simposios especializados"
     ],
-    "relatedResearchAreas": ["tectonica-andina", "procesos-superficiales-riesgos"],
-    "relatedPeople": ["diego-winocur", "daniel-perez", "lucia-sagripanti", "andres-echaurren"],
-    "image": "assets/images/labs/analog-modeling-platform.jpg",
-    "imageAlt": "Plataforma experimental y de análisis asociada a estudios tectónicos andinos",
-    "sourceLabel": "Fuentes públicas de Exactas UBA y Biblioteca Digital",
-    "sourceUrl": "https://exactas.uba.ar/evento/jornadas-socioambientales/resumenes-2023/crisis-ambiental-2/"
+    "relatedResearchAreas": ["tectonica-andina", "modelado-geologico"],
+    "relatedPeople": [
+      "victor-ramos",
+      "diego-winocur",
+      "matias-ghiglione",
+      "gonzalo-ronda",
+      "graciela-vujovich",
+      "florencia-boedo",
+      "daniel-perez",
+      "miguel-ramos",
+      "diego-winocur-investigador",
+      "vanesa-barberon",
+      "ana-lossada",
+      "jonathan-tobal",
+      "mara-mantegazza"
+    ],
+    "image": "assets/images/mirror/labs/tectonica-andina.jpg",
+    "imageAlt": "Vista hacia el este de los lagos Martin y Steffen en la Cordillera Patagónica Septentrional",
+    "sourceLabel": "Laboratorio de Tectónica Andina · sitio histórico IDEAN",
+    "sourceUrl": "http://www.idean.gl.fcen.uba.ar/laboratorio-de-tectonica-andina/"
   },
   {
-    "id": "giss",
-    "slug": "giss",
-    "title": "Grupo de Icnología, Sedimentología y Sustrato (GISS)",
-    "category": "Grupo de investigación",
-    "summary": "Grupo dirigido por Pablo Pazos y vinculado a icnología, sedimentología y análisis del registro geológico y paleoambiental.",
-    "description": "Identificado en fuentes públicas como el grupo a cargo del director del instituto, con trabajo en huellas fósiles, paleoambientes y sedimentología de cuencas.",
+    "id": "bioestratigrafia-alta-resolucion",
+    "slug": "bioestratigrafia-alta-resolucion",
+    "title": "Laboratorio de Bioestratigrafía de Alta Resolución",
+    "category": "Laboratorio",
+    "summary": "Laboratorio orientado al control bioestratigráfico refinado de cuencas andinas a partir de fósiles, microfósiles y geocronología.",
+    "description": "Nacido luego de la discusión internacional sobre límites de pisos cretácicos en 1995, el laboratorio produjo una zonación bioestratigráfica refinada para la cuenca Neuquina y luego amplió su trabajo a otras cuencas andinas y antárticas. Integra amonoideos, palinomorfos, microfósiles calcáreos, nanoplancton, isótopos de carbono y dataciones de circones.",
     "capabilities": [
-      "Icnología y sedimentología",
-      "Interpretación paleoambiental",
-      "Análisis del sustrato y de registros fósiles"
+      "Bioestratigrafía de alta resolución",
+      "Micropaleontología, palinología y nanoplancton",
+      "Correlación temporal y paleoambiental de cuencas sedimentarias"
     ],
     "methods": [
-      "Trabajo de campo",
-      "Análisis sedimentológico",
-      "Interpretación icnológica"
+      "Procesamiento micropaleontológico y palinológico",
+      "Análisis bioestratigráfico y cicloestratigráfico",
+      "Integración con geocronología absoluta de circones"
     ],
-    "relatedResearchAreas": ["paleontologia-sedimentologia"],
-    "relatedPeople": ["pablo-pazos"],
-    "image": "assets/images/gallery/institutional-profile.jpg",
-    "imageAlt": "Trabajo de campo y observación de materiales geológicos",
-    "sourceLabel": "Nota de Nex Ciencia",
-    "sourceUrl": "https://nexciencia.exactas.uba.ar/huellas-fosiles-estegosaurios-cuenca-neuquina-icnologia-pablo-pazos"
+    "relatedResearchAreas": ["bioestratigrafia-alta-resolucion"],
+    "relatedPeople": [
+      "beatriz-aguirre-urreta",
+      "andrea-concheyro",
+      "marcela-cichowolski",
+      "cecilia-rodriguez-amenabar",
+      "andrea-carames",
+      "marina-lescano",
+      "luciana-marin",
+      "daniel-moron-alfonso"
+    ],
+    "image": "assets/images/mirror/labs/bioestratigrafia.jpg",
+    "imageAlt": "Afloramientos de la Formación Agrio en Cerro Mesa, Neuquén",
+    "sourceLabel": "Laboratorio de Bioestratigrafía de Alta Resolución · sitio histórico IDEAN",
+    "sourceUrl": "http://www.idean.gl.fcen.uba.ar/laboratorio-de-bioestratigrafia-de-alta-resolucion/"
   },
   {
     "id": "ecosistemas-marinos-fosiles",
     "slug": "ecosistemas-marinos-fosiles",
     "title": "Laboratorio de Ecosistemas Marinos Fósiles",
     "category": "Laboratorio",
-    "summary": "Laboratorio orientado a paleontología marina, ecosistemas fósiles y reconstrucción de contextos geológicos del registro marino.",
-    "description": "Difundido públicamente por Exactas UBA con dirección de Darío G. Lazo e integrantes dedicados a paleontología y análisis del registro fósil marino.",
+    "summary": "Espacio de investigación dedicado a paleocomunidades bentónicas, tafonomía y paleoecología de sucesiones marinas mesozoicas.",
+    "description": "Desde 2000 el laboratorio desarrolla una línea de investigación centrada en la reconstrucción de paleocomunidades bentónicas y sus paleoambientes asociados en sucesiones marinas del Cretácico Inferior de la cuenca Neuquina. Combina sistemática paleontológica, tafonomía, paleoecología, sedimentología y estratigrafía para interpretar la evolución espacio-temporal de ecosistemas marinos y marino-marginales.",
     "capabilities": [
-      "Paleontología marina",
-      "Reconstrucción de ecosistemas fósiles",
-      "Formación de tesistas y estudiantes"
+      "Reconstrucción de paleocomunidades y paleoambientes marinos",
+      "Análisis de concentraciones fósiles y discontinuidades",
+      "Formación en paleontología marina y tafonomía"
     ],
     "methods": [
-      "Análisis paleontológico",
-      "Trabajo con colecciones y materiales fósiles",
-      "Reconstrucción paleoambiental"
+      "Trabajo de campo y recolección de concentraciones fósiles",
+      "Tafonomía y sistemática paleontológica",
+      "Integración paleoecológica y sedimentológica"
     ],
-    "relatedResearchAreas": ["paleontologia-sedimentologia"],
-    "relatedPeople": ["dario-lazo"],
-    "image": "assets/images/gallery/hero-andean-institute.jpg",
-    "imageAlt": "Paisaje geológico asociado a estudios marinos fósiles y regionales",
-    "sourceLabel": "Nota de Exactas UBA: Cuando la montaña era mar",
-    "sourceUrl": "https://exactas.uba.ar/?p=26072"
+    "relatedResearchAreas": ["ecosistemas-marinos-fosiles", "bioestratigrafia-alta-resolucion"],
+    "relatedPeople": [
+      "dario-lazo",
+      "agustina-toscano",
+      "graciela-bressan",
+      "cecilia-cataldo",
+      "leticia-luci",
+      "alejandra-andrada"
+    ],
+    "image": "assets/images/mirror/labs/ecosistemas.jpg",
+    "imageAlt": "Concentración fósil de gastrópodos en la Formación Agrio, Neuquén",
+    "sourceLabel": "Laboratorio de Ecosistemas Marinos Fósiles · sitio histórico IDEAN",
+    "sourceUrl": "http://www.idean.gl.fcen.uba.ar/laboratorio-de-ecosistemas-marinos-fosiles/"
   },
   {
     "id": "scama",
     "slug": "scama",
-    "title": "Laboratorio de Sondeos de Ambientes Continentales y Marinos (SCAMa)",
+    "title": "Laboratorio de Sondeos de Ambientes Continentales y Marinos",
     "category": "Laboratorio",
-    "summary": "Espacio asociado a estudios de paleolimnología, ostrácodos y reconstrucción de parámetros ambientales y climáticos.",
-    "description": "Identificado en la Biblioteca Digital de Exactas UBA a partir de tesis doctorales desarrolladas en IDEAN con foco en ambientes continentales y marinos.",
+    "summary": "Laboratorio orientado a reconstrucciones paleoambientales y paleoclimáticas mediante bioindicadores y testigos sedimentarios.",
+    "description": "Creado en 2008, el laboratorio busca caracterizar la variabilidad paleoambiental y paleoclimática natural del país mediante ostrácodos, foraminíferos y registros sedimentarios de la región pampeana, la Patagonia y el margen marino. Su agenda se expandió desde el Cuaternario Superior a distintas regiones y escalas temporales.",
     "capabilities": [
-      "Paleolimnología",
-      "Reconstrucción ambiental y climática",
-      "Estudio de ambientes continentales y marinos"
+      "Extracción y análisis de testigos sedimentarios",
+      "Reconstrucción paleoambiental y paleoclimática",
+      "Estudio de bioindicadores continentales y marinos"
     ],
     "methods": [
-      "Sondeos sedimentarios",
-      "Análisis paleoambiental",
-      "Estudio de microfósiles"
+      "Muestreo de sedimentos superficiales y testigos lacustres",
+      "Análisis de ostrácodos y foraminíferos",
+      "Interpretación paleoecológica de registros cuaternarios"
     ],
-    "relatedResearchAreas": ["paleontologia-sedimentologia", "procesos-superficiales-riesgos"],
-    "relatedPeople": ["maria-sofia-plastani"],
-    "image": "assets/images/gallery/contact-fieldwork.jpg",
-    "imageAlt": "Paisaje y trabajo de campo asociado a estudios ambientales",
-    "sourceLabel": "Biblioteca Digital Exactas UBA",
-    "sourceUrl": "https://bibliotecadigital.exactas.uba.ar/collection/tesis/document/tesis_n6092_Plastani"
+    "relatedResearchAreas": ["sondeos-paleoambientes-cuaternario"],
+    "relatedPeople": [
+      "cecilia-laprida",
+      "maria-sofia-plastani",
+      "natalia-garcia-chapori",
+      "sofia-plastani"
+    ],
+    "image": "assets/images/mirror/labs/scama.jpg",
+    "imageAlt": "Muestreo de sedimento superficial en Laguna Capri, Santa Cruz",
+    "sourceLabel": "Laboratorio de Sondeos de Ambientes Continentales y Marinos · sitio histórico IDEAN",
+    "sourceUrl": "http://www.idean.gl.fcen.uba.ar/laboratorio-de-sondeos-de-ambientes-continentales-y-marinos/"
   },
   {
-    "id": "geologia-planetaria",
-    "slug": "geologia-planetaria",
-    "title": "Laboratorio de Geología Planetaria",
-    "category": "Laboratorio en crecimiento",
-    "summary": "Laboratorio dedicado a comparar procesos geológicos terrestres con los de otros cuerpos del sistema solar, especialmente Marte.",
-    "description": "El espacio aparece en notas públicas de Exactas UBA y Nex Ciencia como una línea de trabajo en crecimiento asociada a Mauro Spagnuolo y a investigaciones sobre geomorfología planetaria.",
+    "id": "geodinamica",
+    "slug": "geodinamica",
+    "title": "Laboratorio de Geodinámica",
+    "category": "Laboratorio",
+    "summary": "Unidad dedicada a la dinámica de los Andes del sur con abordajes estructurales, sísmicos, geoquímicos y morfométricos.",
+    "description": "Aunque se creó formalmente in 2016, el laboratorio venía trabajando como unidad desde años antes. Su objetivo es analizar la dinámica de los Andes del sur desde las fases de su constitución hasta el presente, con foco actual en el segmento comprendido entre 34°S y 46°S.",
     "capabilities": [
-      "Geomorfología planetaria",
-      "Comparación entre procesos terrestres y extraterrestres",
-      "Análisis de imágenes y radar"
+      "Análisis geodinámico del margen andino sur",
+      "Integración de petrología, geoquímica y tectónica",
+      "Estudio de volcanismo y estructuras recientes"
     ],
     "methods": [
-      "Interpretación geomorfológica",
-      "Análisis remoto",
-      "Modelado comparado"
+      "Interpretación de información sísmica",
+      "Análisis estructural, morfométrico y gravimétrico",
+      "Caracterización geoquímica de unidades magmáticas"
     ],
-    "relatedResearchAreas": ["geologia-planetaria"],
-    "relatedPeople": ["mauro-spagnuolo"],
-    "image": "assets/images/gallery/hero-andean-institute.jpg",
-    "imageAlt": "Imagen de apoyo institucional para geología regional y comparada",
-    "sourceLabel": "Nota de Exactas UBA y Nex Ciencia",
-    "sourceUrl": "https://exactas.uba.ar/la-tierra-fuera-de-la-tierra/"
+    "relatedResearchAreas": ["geodinamica-vulcanismo", "tectonica-andina"],
+    "relatedPeople": [
+      "andres-folguera",
+      "vanesa-litvak",
+      "lucia-sagripanti",
+      "lucas-fennell",
+      "lucia-fernandez-paz",
+      "sofia-iannelli",
+      "lucia-sagripanti-investigadora",
+      "eliana-acevedo"
+    ],
+    "image": "assets/images/mirror/labs/geodinamica.jpg",
+    "imageAlt": "Secuencia volcánica pliocena del cerro Silvia en la Cordillera Nordpatagónica",
+    "sourceLabel": "Laboratorio de Geodinámica · sitio histórico IDEAN",
+    "sourceUrl": "http://www.idean.gl.fcen.uba.ar/laboratorio-de-geodinamica/"
+  },
+  {
+    "id": "giss",
+    "slug": "giss",
+    "title": "Grupo de Icnología, Sedimentología y Sustrato",
+    "category": "Grupo de investigación",
+    "summary": "Grupo interdisciplinario que articula geología y paleontología a partir del estudio conjunto de sedimentología, icnología y sustratos.",
+    "description": "El GISS se organiza alrededor del trabajo de investigadores, becarios y estudiantes que abordan en forma conjunta sedimentología e icnología. El grupo estudia cómo los sustratos y su modificación bacteriana afectan la icnodiversidad y el registro etológico tanto en ambientes marinos como continentales.",
+    "capabilities": [
+      "Icnología de invertebrados y vertebrados",
+      "Análisis sedimentológico y estratigráfico",
+      "Interpretación de sustratos y paleoambientes"
+    ],
+    "methods": [
+      "Relevamiento de facies y perfiles sedimentarios",
+      "Identificación de trazas fósiles e icnoasociaciones",
+      "Integración litofacial e icnotaxonómica"
+    ],
+    "relatedResearchAreas": ["icnologia-sedimentologia-sustrato", "bioestratigrafia-alta-resolucion"],
+    "relatedPeople": [
+      "pablo-pazos",
+      "diana-fernandez",
+      "carolina-gutierrez"
+    ],
+    "image": "assets/images/mirror/labs/giss.jpg",
+    "imageAlt": "Óndulas de oleaje en depósitos marino marginales de la cuenca Neuquina",
+    "sourceLabel": "Grupo de Icnología, Sedimentología y Sustrato · sitio histórico IDEAN",
+    "sourceUrl": "http://www.idean.gl.fcen.uba.ar/grupo-de-icnologia-sedimentologia-y-sustrato/"
+  },
+  {
+    "id": "modelado-geologico",
+    "slug": "modelado-geologico",
+    "title": "Laboratorio de Modelado Geológico",
+    "category": "Laboratorio",
+    "summary": "Espacio dedicado a simular deformación andina con modelos análogos y herramientas numéricas.",
+    "description": "La reseña histórica de IDEAN identifica al Laboratorio de Modelado Geológico como una plataforma clave para simular procesos de deformación comunes en la cadena andina. Allí se pusieron a prueba hipótesis tectónicas mediante modelos físicos análogos, modelado cinemático y mecánico en 2D y 3D y herramientas informáticas para secciones estructurales y reconstrucciones palinspásticas.",
+    "capabilities": [
+      "Modelado físico-análogo de deformación andina",
+      "Reconstrucciones palinspásticas y secciones estructurales",
+      "Modelado numérico cinemático y mecánico"
+    ],
+    "methods": [
+      "Experimentos análogos de deformación",
+      "Modelado 2D y 3D",
+      "Desarrollo de herramientas informáticas para reconstrucción estructural"
+    ],
+    "relatedResearchAreas": ["modelado-geologico", "tectonica-andina"],
+    "relatedPeople": [
+      "ernesto-cristallini",
+      "berenice-plotek",
+      "mauro-spagnuolo",
+      "jeremias-likerman",
+      "daniel-yagupsky",
+      "cecilia-guzman",
+      "felipe-tapia",
+      "clara-correa-luna"
+    ],
+    "image": "assets/images/labs/analog-modeling-platform.jpg",
+    "imageAlt": "Plataforma experimental de modelado geológico",
+    "sourceLabel": "Reseña histórica · sitio histórico IDEAN",
+    "sourceUrl": "http://www.idean.gl.fcen.uba.ar/resena-historica/"
+  },
+  {
+    "id": "gesva",
+    "slug": "gesva",
+    "title": "Grupo de Estudio y Seguimiento de Volcanes Activos",
+    "category": "Grupo de investigación",
+    "summary": "Grupo dedicado al estudio y monitoreo de volcanes activos, con fuerte foco en el Volcán Copahue y la seguridad volcánica.",
+    "description": "El GESVA se especializa en el estudio de sistemas volcánicos activos en los Andes. Su trabajo integra la geoquímica de fluidos, la geofísica volcánica y el monitoreo térmico para comprender el comportamiento de los volcanes y contribuir a la gestión del riesgo volcánico en Argentina.",
+    "capabilities": [
+      "Monitoreo geoquímico de fluidos volcánicos",
+      "Geofísica y termometría de sistemas activos",
+      "Evaluación de peligrosidad y riesgo volcánico"
+    ],
+    "methods": [
+      "Muestreo de gases y aguas termales",
+      "Instalación de estaciones de monitoreo",
+      "Análisis de sensores remotos y sismicidad volcánica"
+    ],
+    "relatedResearchAreas": ["geodinamica-vulcanismo"],
+    "relatedPeople": [
+      "mariano-agusto",
+      "maria-laura-velez",
+      "gregorio-boixart",
+      "joaquin-llano",
+      "antonella-mazzensio",
+      "maria-clara-lamberti"
+    ],
+    "image": "assets/images/mirror/labs/gesva.jpg",
+    "imageAlt": "Cráter del Volcán Copahue en actividad",
+    "sourceLabel": "GESVA · sitio histórico IDEAN",
+    "sourceUrl": "http://www.idean.gl.fcen.uba.ar/gesva/"
+  },
+  {
+    "id": "paleobiologicos",
+    "slug": "paleobiologicos",
+    "title": "Grupo de Estudios Paleobiológicos",
+    "category": "Grupo de investigación",
+    "summary": "Investigación sobre la evolución y paleobiología de vertebrados, principalmente en el Mesozoico de Gondwana.",
+    "description": "Este grupo aborda el estudio de los vertebrados fósiles desde una perspectiva paleobiológica, integrando filogenia, paleobiogeografía y paleoecología. Su trabajo se centra en el registro mesozoico, aportando datos clave para entender la evolución de los tetrápodos en el hemisferio sur.",
+    "capabilities": [
+      "Sistemática y filogenia de vertebrados fósiles",
+      "Paleobiología y paleoecología evolutiva",
+      "Exploración y rescate paleontológico"
+    ],
+    "methods": [
+      "Prospección y excavación en yacimientos mesozoicos",
+      "Preparación técnica de materiales fósiles",
+      "Análisis filogenético y morfo-funcional"
+    ],
+    "relatedResearchAreas": ["bioestratigrafia-alta-resolucion"],
+    "relatedPeople": [
+      "claudia-marsicano",
+      "leandro-gaetano",
+      "veronica-krapovickas",
+      "juan-martin-leardi",
+      "federico-seoane",
+      "eduardo-ottone",
+      "daniela-martinez",
+      "rocio-vera"
+    ],
+    "image": "assets/images/mirror/labs/paleobiologia.jpg",
+    "imageAlt": "Reconstrucción de vertebrados mesozoicos",
+    "sourceLabel": "Paleobiología · sitio histórico IDEAN",
+    "sourceUrl": "http://www.idean.gl.fcen.uba.ar/integrantes/"
   }
 ]

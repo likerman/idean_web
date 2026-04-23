@@ -10,12 +10,29 @@ Sitio institucional estático para el Instituto de Estudios Andinos Don Pablo Gr
 - `assets/css/styles.css`: sistema visual compartido y layouts.
 - `assets/data/*.json`: contenido editable.
 - `assets/images/`: logos e imágenes reutilizadas del material existente.
+- `scripts/validate-data.mjs`: validación técnica básica de datasets e imágenes.
+- `docs/`: documentación de validación, publicación y lanzamiento.
 
 ## Cómo se renderiza
 
 - El sitio usa HTML estático más un script ES module (`assets/js/site.js`).
 - Header, footer y varios bloques internos se renderizan desde datos JSON.
 - Cada página HTML define un `data-page` y placeholders (`data-*`) que el script completa.
+
+## Validación rápida antes de publicar
+
+Ejecutar:
+
+```bash
+node scripts/validate-data.mjs
+```
+
+Documentación complementaria:
+
+- `docs/VALIDATION_REGISTER.md`
+- `docs/PUBLICATION_NOTES.md`
+- `docs/LAUNCH_CHECKLIST.md`
+- `docs/QA_NOTES.md`
 
 ## Mantenimiento de contenido
 
@@ -170,11 +187,16 @@ Estado actual:
 - algunas equivalencias están implementadas sólo como destino nuevo
 - los redirects reales de servidor todavía no están configurados en este proyecto
 
+Ver también:
+
+- `docs/PUBLICATION_NOTES.md`
+
 ## Limitaciones conocidas
 
 - No hay backend ni CMS.
 - No hay filtros complejos ni buscador interno.
 - Las páginas de noticias individuales usan query string (`noticia.html?slug=...`) por simplicidad.
+- La base actual es español primero; una arquitectura ES/EN con `/es/` y `/en/` todavía requeriría una fase específica de internacionalización.
 - Parte del contenido fue consolidado a partir de fuentes públicas y todavía requiere validación institucional final.
 
 ## QA básico recomendado antes de publicar

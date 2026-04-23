@@ -6,6 +6,54 @@
     "notes": "Nueva homepage institucional."
   },
   {
+    "legacy": "/quienes-somos/",
+    "new": "/institucional.html",
+    "status": "implemented",
+    "notes": "El contenido institucional principal fue absorbido por la nueva página Institucional."
+  },
+  {
+    "legacy": "/resena-historica/",
+    "new": "/institucional.html",
+    "status": "implemented",
+    "notes": "La reseña histórica se integró a la nueva página Institucional."
+  },
+  {
+    "legacy": "/autoridades/",
+    "new": "/institucional.html",
+    "status": "implemented",
+    "notes": "Dirección, consejo interno y comité CPA migrados a la nueva sección Institucional."
+  },
+  {
+    "legacy": "/integrantes/",
+    "new": "/miembros.html",
+    "status": "implemented",
+    "notes": "La estructura histórica de integrantes se reorganizó en la nueva página Miembros."
+  },
+  {
+    "legacy": "/grupos/",
+    "new": "/investigacion.html",
+    "status": "planned",
+    "notes": "El contenido se distribuyó entre Investigación y Laboratorios; requiere redirect de servidor."
+  },
+  {
+    "legacy": "/proyectos/",
+    "new": "/investigacion.html",
+    "status": "planned",
+    "notes": "La organización temática de proyectos informa la nueva página Investigación."
+  },
+  {
+    "legacy": "/servicios-tecnologicos/",
+    "new": "/servicios.html",
+    "status": "implemented",
+    "notes": "El catálogo histórico de servicios tecnológicos fue migrado a la nueva página Servicios."
+  },
+  {
+    "legacy": "/contacto/",
+    "new": "/contacto.html",
+    "status": "implemented",
+    "notes": "La información de ubicación y contacto institucional se consolidó en Contacto."
+  },
+  {
     "legacy": "/los-andes/",
     "new": "/investigacion.html",
     "status": "discovery",

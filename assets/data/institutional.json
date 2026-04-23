@@ -1,59 +1,115 @@
 {
   "overview": {
     "eyebrow": "Perfil institucional",
-    "title": "IDEAN como instituto UBA-CONICET de geociencias andinas",
+    "title": "Una unidad UBA-CONICET creada para estudiar la evolución de los Andes",
     "paragraphs": [
-      "El perfil institucional público de CONICET describe a IDEAN como una Unidad Ejecutora dedicada a entender la formación de la Cordillera de los Andes y su relación con los desplazamientos de la placa Sudamericana.",
-      "Ese marco de trabajo sitúa al instituto en una agenda científica orientada a la evolución de sistemas orogénicos, la paleogeografía andina, los recursos naturales y la evaluación de riesgos geológicos."
+      "Un grupo de investigadores de diversos laboratorios y equipos de trabajo de la Universidad de Buenos Aires decidió agruparse para formar una unidad ejecutora de doble dependencia con una temática común: la evolución de los Andes en su sentido más amplio, tanto desde el punto de vista geológico como desde el estudio de su registro fósil y de los riesgos asociados a su actividad volcánica y tectónica presente.",
+      "La creación del instituto respondió a la necesidad de superar esfuerzos aislados y articular una mirada multidisciplinaria sobre una cadena montañosa activa de valor universal para las Ciencias de la Tierra. Esa sinergia permite abordar la formación de montañas, la evolución paleogeográfica, los recursos naturales y la evaluación de riesgos geológicos con una base científica integrada.",
+      "El estudio de los Andes en IDEAN incorpora además bioestratigrafía, paleontología, sedimentología, plataformas carbonáticas, cicloestratigrafía y reconstrucciones paleoclimáticas del Cuaternario, en especial en comarcas andinas patagónicas que funcionan como archivos privilegiados para comprender cambios ambientales y climáticos."
     ],
     "facts": [
       {
-        "label": "Unidad",
-        "value": "Instituto de Estudios Andinos “Don Pablo Groeber”"
+        "label": "Creación del instituto",
+        "value": "13 de septiembre de 2010",
+        "note": "Resolución CONICET 2493/2010 y Resolución CS UBA 1501/2010."
       },
       {
-        "label": "Gran área",
-        "value": "Ciencias Exactas y Naturales"
+        "label": "Dependencia",
+        "value": "Unidad Ejecutora UBA-CONICET",
+        "note": "Reconocida por el CONICET y la Universidad de Buenos Aires."
       },
       {
-        "label": "Disciplina principal",
-        "value": "Ciencias de la Tierra y relacionadas con el Medio Ambiente"
+        "label": "Sede institucional",
+        "value": "Ciudad Universitaria · Pabellón II",
+        "note": "Intendente Güiraldes 2160, CABA."
       }
     ]
   },
   "history": {
-    "title": "Identidad, trayectoria y nombre institucional",
+    "title": "Trayectoria académica e institucional",
     "paragraphs": [
-      "La identidad del instituto está estrechamente vinculada a la tradición de la geología andina argentina y al legado científico de Don Pablo Groeber, figura central en la historia de la disciplina.",
-      "En septiembre de 2021 el instituto realizó una conferencia institucional para destacar la vida y obra de Groeber, en ocasión del undécimo aniversario de su creación, reforzando ese vínculo entre memoria disciplinar e identidad contemporánea."
+      "Con el advenimiento de la democracia se iniciaron en marzo de 1984 los cursos de Geotectónica en la Universidad de Buenos Aires, dictados por el Dr. Víctor A. Ramos y el Ing. Daniel Valencio. Ese comienzo marca también el establecimiento formal de un grupo de investigación dedicado en forma específica al estudio de la evolución tectónica de la Cordillera de los Andes.",
+      "Con los años, el Laboratorio de Tectónica Andina se consolidó como un centro de referencia sudamericano y articuló colaboraciones con el Laboratorio de Bioestratigrafía de Alta Resolución, grupos paleobiológicos, laboratorios de modelado geológico, estudios de volcanes activos y reconstrucciones paleoambientales. Esa red interdisciplinaria fue la base científica sobre la que se organizó luego el IDEAN.",
+      "A fines de 2006, investigadores de la UBA y del CONICET decidieron reunirse para formar una unidad ejecutora reconocida como Instituto de Estudios Andinos Don Pablo Groeber. El instituto quedó formalmente creado en 2010 como unidad de doble dependencia UBA-CONICET."
     ],
     "highlights": [
       {
-        "title": "Don Pablo Groeber",
-        "text": "Geólogo de referencia para los Andes argentino-chilenos y figura que da nombre al instituto."
+        "title": "1984",
+        "text": "Inicio de los cursos de Geotectónica y de las actividades formales de investigación tectónica andina en la UBA."
       },
       {
-        "title": "Tradición académica",
-        "text": "Inserción en el ecosistema científico y docente de la Universidad de Buenos Aires y el CONICET."
+        "title": "2006",
+        "text": "Convergencia de laboratorios y grupos para impulsar una unidad ejecutora dedicada al estudio de los Andes."
       },
       {
-        "title": "Continuidad institucional",
-        "text": "Desarrollo de investigación, formación y producción científica en Ciencias de la Tierra."
+        "title": "2010",
+        "text": "Creación oficial de IDEAN como instituto de doble dependencia entre la Universidad de Buenos Aires y el CONICET."
       }
     ]
   },
   "authorities": {
-    "title": "Autoridades y referencias públicas",
+    "title": "Dirección y autoridades",
     "cards": [
       {
-        "label": "Director actual",
-        "value": "Dr. Pablo José Pazos",
-        "note": "Dato tomado del perfil institucional público de CONICET."
+        "label": "Director",
+        "value": "Dr. Ernesto Osvaldo Cristallini",
+        "note": "Investigador Principal CONICET · Profesor Titular UBA · Dirección IDEAN."
       },
       {
-        "label": "Sede",
-        "value": "Ciudad Universitaria, Pabellón II, CABA",
-        "note": "Ubicación institucional publicada en fuentes públicas del instituto."
+        "label": "Vicedirectora",
+        "value": "Dra. Vanesa Dafne Litvak",
+        "note": "Investigadora Independiente CONICET · Profesora Asistente UBA."
+      },
+      {
+        "label": "Correo de dirección",
+        "value": "direccionidean@gl.fcen.uba.ar",
+        "note": "Publicado en la sección histórica de autoridades del sitio original."
+      }
+    ]
+  },
+  "missionAxes": {
+    "title": "Ejes de trabajo institucional",
+    "items": [
+      {
+        "title": "Cordillera de los Andes",
+        "text": "Comprender la formación de la cordillera y su relación con los desplazamientos de la placa Sudamericana, aprovechando uno de los laboratorios naturales de subducción más activos y mejor expuestos del planeta."
+      },
+      {
+        "title": "Registro fósil y tiempo geológico",
+        "text": "Estudiar asociaciones fósiles, secuencias sedimentarias, bioestratigrafía y paleoambientes para establecer marcos temporales robustos, correlaciones regionales y relaciones paleogeográficas."
+      },
+      {
+        "title": "Recursos, ambiente y riesgos",
+        "text": "Conectar conocimiento básico con problemas de exploración de recursos naturales, evaluación de riesgos sismotectónicos y volcánicos, y reconstrucción climática y ambiental de regiones andinas y patagónicas."
+      }
+    ]
+  },
+  "governance": {
+    "title": "Consejo interno y evaluación",
+    "sections": [
+      {
+        "title": "Consejo Interno",
+        "members": [
+          "Dr. Diego Winocur",
+          "Dra. Lucía Sagripanti",
+          "Dr. Leandro C. Gaetano",
+          "Dra. Vanesa D. Litvak",
+          "Dra. María Clara Lamberti",
+          "Dr. Jeremías Likerman",
+          "Dr. Miguel E. Ramos",
+          "Dr. Federico Seoane"
+        ]
+      },
+      {
+        "title": "Comité de Evaluación para CPA",
+        "members": [
+          "Dr. Mauro G. Spagnuolo",
+          "Dr. Pablo J. Pazos",
+          "Dra. Andrea Concheyro",
+          "Eugenio I. Steimbach Fonrouge",
+          "Dr. Daniel L. Yagupsky",
+          "Ana C. Barreyra"
+        ]
       }
     ]
   },
@@ -61,33 +117,37 @@
     "title": "Inserción institucional",
     "items": [
       {
-        "title": "UBA",
-        "text": "El instituto forma parte del entramado científico vinculado a la Universidad de Buenos Aires y a la formación académica en Ciencias Geológicas y áreas afines."
+        "title": "Universidad de Buenos Aires",
+        "text": "IDEAN surge de grupos de investigación, docencia y formación avanzada vinculados al Departamento de Ciencias Geológicas y a la Facultad de Ciencias Exactas y Naturales."
       },
       {
         "title": "FCEN",
-        "text": "Su actividad se inscribe en el ámbito de la Facultad de Ciencias Exactas y Naturales, con vínculos visibles con docencia, tesis y actividades académicas."
+        "text": "La sede en Ciudad Universitaria y la trayectoria de cursos, tesis y actividades académicas muestran una inserción sostenida en el ecosistema científico y formativo de Exactas UBA."
       },
       {
         "title": "CONICET",
-        "text": "La dimensión de Unidad Ejecutora y su perfil institucional público refuerzan la pertenencia del instituto al sistema científico nacional."
+        "text": "La condición de Unidad Ejecutora refuerza el carácter federal y estratégico del instituto dentro del sistema científico nacional y de la investigación geocientífica argentina."
       }
     ]
   },
-  "governanceNote": {
-    "title": "Estructura institucional detallada",
-    "text": "La composición detallada de consejo, áreas de gobierno o estructura interna no se incorporó aún en esta versión porque no fue normalizada a partir de una fuente institucional pública consolidada. Se integrará en una fase posterior."
-  },
   "documents": {
-    "title": "Documentos y referencias",
+    "title": "Documentos y referencias públicas",
     "items": [
       {
         "label": "Perfil institucional IDEAN (CONICET)",
-        "href": "https://convocatorias.conicet.gov.ar/wp-content/uploads/sites/3/PERFIL-IDEAN-1.pdf"
+        "href": "https://convocatorias.conicet.gov.ar/wp-content/uploads/sites/3/PERFIL-IDEAN.pdf"
       },
       {
-        "label": "Sitio actual de IDEAN",
-        "href": "http://www.idean.gl.fcen.uba.ar/"
+        "label": "Quiénes somos · sitio histórico IDEAN",
+        "href": "http://www.idean.gl.fcen.uba.ar/quienes-somos/"
+      },
+      {
+        "label": "Reseña histórica · sitio histórico IDEAN",
+        "href": "http://www.idean.gl.fcen.uba.ar/resena-historica/"
+      },
+      {
+        "label": "Autoridades · sitio histórico IDEAN",
+        "href": "http://www.idean.gl.fcen.uba.ar/autoridades/"
       },
       {
         "label": "Nota institucional sobre Don Pablo Groeber",

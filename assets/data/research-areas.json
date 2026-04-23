@@ -2,52 +2,93 @@
   {
     "id": "tectonica-andina",
     "slug": "tectonica-andina",
-    "title": "Tectónica andina y geología estructural",
+    "title": "Tectónica andina",
     "focus": "Cordillera y cuencas",
-    "summary": "Estudio de la formación de la Cordillera de los Andes, la arquitectura de cuencas y la evolución tectónica regional.",
-    "description": "La línea reúne estudios sobre deformación, evolución orogénica, volcanismo andino, cuencas sedimentarias y estructuras regionales en distintos segmentos de la cordillera y del antepaís.",
-    "keywords": ["tectónica", "orógeno andino", "cuencas", "estructura regional"],
-    "relatedLabs": ["tectonica-andina"],
-    "relatedPeople": ["diego-winocur", "daniel-perez", "lucia-sagripanti", "andres-echaurren"],
-    "relatedPublications": ["GLOF modelling of Torre Lake and its potential impact in El Chaltén"]
+    "summary": "Línea histórica del instituto dedicada a la evolución tectónica de los Andes, su basamento preandino y la arquitectura de cuencas y fajas plegadas.",
+    "description": "Surge de las actividades iniciadas en 1984 en la UBA y consolidadas en el Laboratorio de Tectónica Andina. Reúne estudios estructurales, levantamientos de la alta cordillera, evolución del margen protoandino y análisis regionales desarrollados a lo largo de distintos segmentos de la cordillera.",
+    "keywords": ["tectónica", "orógeno andino", "geología estructural", "cuencas", "cordillera"],
+    "relatedLabs": ["tectonica-andina", "modelado-geologico"],
+    "relatedPeople": ["victor-ramos", "diego-winocur", "matias-ghiglione", "gonzalo-ronda"],
+    "relatedPublications": [
+      "GLOF modelling of Torre Lake and its potential impact in El Chaltén"
+    ]
   },
   {
-    "id": "paleontologia-sedimentologia",
-    "slug": "paleontologia-sedimentologia",
-    "title": "Paleontología, bioestratigrafía y sedimentología",
-    "focus": "Registro geológico",
-    "summary": "Investigación sobre fósiles, microfósiles, paleoambientes y secuencias sedimentarias en distintas cuencas de interés regional.",
-    "description": "Integra paleontología marina y continental, estudios icnológicos, estratigrafía y análisis sedimentológico para interpretar la historia geológica y paleoambiental de diversos sistemas.",
-    "keywords": ["paleontología", "sedimentología", "bioestratigrafía", "paleoambientes"],
-    "relatedLabs": ["giss", "ecosistemas-marinos-fosiles", "scama"],
-    "relatedPeople": ["pablo-pazos", "dario-lazo", "maria-sofia-plastani"],
+    "id": "bioestratigrafia-alta-resolucion",
+    "slug": "bioestratigrafia-alta-resolucion",
+    "title": "Bioestratigrafía de alta resolución",
+    "focus": "Control temporal y correlación",
+    "summary": "Integra amonoideos, palinomorfos, microfósiles calcáreos y nanoplancton para refinar el control bioestratigráfico de cuencas andinas.",
+    "description": "La línea nace del Laboratorio de Bioestratigrafía de Alta Resolución y amplía el estudio del Cretácico inferior de la cuenca Neuquina a otras cuencas meso-cenozoicas, con aportes de micropaleontología, palinología, geocronología con circones y cicloestratigrafía.",
+    "keywords": ["bioestratigrafía", "micropaleontología", "nanofósiles", "palinología", "cicloestratigrafía"],
+    "relatedLabs": ["bioestratigrafia-alta-resolucion"],
+    "relatedPeople": ["beatriz-aguirre-urreta", "andrea-concheyro"],
     "relatedPublications": [
-      "Sedimentological and ichnological characterization of muddy storm related deposits: The upper Hauterivian ramp of the Agrio Formation in the Neuquén Basin, Argentina",
       "Palynology and micropaleontology of the cretaceous of the James Ross Basin, Antarctica. Review of current knowledge"
     ]
   },
   {
-    "id": "procesos-superficiales-riesgos",
-    "slug": "procesos-superficiales-riesgos",
-    "title": "Procesos superficiales, glaciología y riesgos geológicos",
-    "focus": "Ambientes andinos",
-    "summary": "Abordaje de lagos glaciales, inestabilidad de laderas, evolución del paisaje y dinámica de ambientes de montaña.",
-    "description": "La línea articula evaluación del riesgo geológico, peligrosidad natural, glaciares, sistemas fluviales y procesos de superficie en regiones andinas y patagónicas.",
-    "keywords": ["riesgo geológico", "glaciología", "procesos de superficie", "paisaje"],
-    "relatedLabs": ["tectonica-andina", "scama"],
-    "relatedPeople": ["pablo-pazos", "diego-winocur", "maria-sofia-plastani"],
-    "relatedPublications": ["GLOF modelling of Torre Lake and its potential impact in El Chaltén"]
+    "id": "ecosistemas-marinos-fosiles",
+    "slug": "ecosistemas-marinos-fosiles",
+    "title": "Ecosistemas marinos fósiles y paleobiología",
+    "focus": "Paleoecología y tafonomía",
+    "summary": "Aborda la reconstrucción de paleocomunidades bentónicas, concentraciones fósiles y paleoambientes marinos andinos.",
+    "description": "La línea se organiza alrededor del Laboratorio de Ecosistemas Marinos Fósiles y combina sistemática paleontológica, tafonomía, paleoecología, sedimentología y estratigrafía para interpretar ecosistemas marinos mesozoicos y marino-marginales.",
+    "keywords": ["paleontología", "tafonomía", "paleoecología", "ecosistemas fósiles", "cuenca Neuquina"],
+    "relatedLabs": ["ecosistemas-marinos-fosiles"],
+    "relatedPeople": ["dario-lazo", "agustina-toscano"],
+    "relatedPublications": []
   },
   {
-    "id": "geologia-planetaria",
-    "slug": "geologia-planetaria",
-    "title": "Geología planetaria y modelado comparado",
-    "focus": "Planetas y analogías terrestres",
-    "summary": "Estudio de geomorfología y estructuras en otros cuerpos del sistema solar a partir de herramientas y analogías geológicas.",
-    "description": "La geología planetaria se desarrolla en IDEAN a través de un laboratorio en crecimiento que compara procesos terrestres y planetarios, incluyendo Marte, estructuras eólicas, volcanismo y deformación.",
-    "keywords": ["Marte", "geomorfología planetaria", "modelado análogo", "astrogeología"],
-    "relatedLabs": ["geologia-planetaria"],
-    "relatedPeople": ["mauro-spagnuolo"],
+    "id": "geodinamica-vulcanismo",
+    "slug": "geodinamica-vulcanismo",
+    "title": "Geodinámica, vulcanismo y petrología andina",
+    "focus": "Procesos profundos y volcanismo",
+    "summary": "Estudia la dinámica de los Andes del sur desde su constitución hasta el presente con herramientas estructurales, sísmicas, geoquímicas y morfométricas.",
+    "description": "Apoyada en el Laboratorio de Geodinámica y en los antecedentes de grupos volcánicos del instituto, esta línea integra análisis estructurales, información sísmica, petrología, geoquímica, morfometría y gravimetría para comprender segmentos andinos entre 34°S y 46°S.",
+    "keywords": ["geodinámica", "vulcanismo", "petrología", "geoquímica", "Andes del sur"],
+    "relatedLabs": ["geodinamica"],
+    "relatedPeople": ["andres-folguera", "vanesa-litvak", "lucia-sagripanti"],
+    "relatedPublications": [
+      "Evolución tectono-estratigráfica de la Cordillera de la Costa y la depresión central de Chile"
+    ]
+  },
+  {
+    "id": "sondeos-paleoambientes-cuaternario",
+    "slug": "sondeos-paleoambientes-cuaternario",
+    "title": "Sondeos paleoambientales y clima del Cuaternario",
+    "focus": "Ambientes continentales y marinos",
+    "summary": "Reconstruye variabilidad paleoambiental y paleoclimática reciente a partir de bioindicadores en secuencias sedimentarias continentales y marinas.",
+    "description": "La línea se apoya en el Laboratorio de Sondeos de Ambientes Continentales y Marinos y trabaja con ostrácodos, foraminíferos, lagos patagónicos, lagunas pampeanas y registros del margen continental para estudiar cambios climáticos y ambientales del Cuaternario.",
+    "keywords": ["paleoclima", "cuaternario", "ostrácodos", "foraminíferos", "paleoambientes"],
+    "relatedLabs": ["scama"],
+    "relatedPeople": ["cecilia-laprida", "maria-sofia-plastani"],
+    "relatedPublications": []
+  },
+  {
+    "id": "icnologia-sedimentologia-sustrato",
+    "slug": "icnologia-sedimentologia-sustrato",
+    "title": "Icnología, sedimentología y sustrato",
+    "focus": "Trazas fósiles y facies",
+    "summary": "Analiza interacciones entre sustrato, procesos sedimentarios e icnodiversidad en ambientes marinos y continentales.",
+    "description": "La línea del GISS vincula sedimentología e icnología como punto de encuentro entre geología y paleontología, con experiencia en icnotaxonomía, litofacies y estratigrafía desde el Paleozoico al Neógeno.",
+    "keywords": ["icnología", "sedimentología", "sustrato", "facies", "paleoambientes"],
+    "relatedLabs": ["giss"],
+    "relatedPeople": ["pablo-pazos"],
+    "relatedPublications": [
+      "Sedimentological and ichnological characterization of muddy storm related deposits"
+    ]
+  },
+  {
+    "id": "modelado-geologico",
+    "slug": "modelado-geologico",
+    "title": "Modelado geológico y reconstrucción estructural",
+    "focus": "Modelos físicos y numéricos",
+    "summary": "Desarrolla modelos físicos análogos, modelado numérico y herramientas informáticas para estudiar la deformación andina.",
+    "description": "La reseña histórica del instituto destaca la creación del Laboratorio de Modelado Geológico como un espacio que permitió poner a prueba hipótesis tectónicas mediante modelos físicos, reconstrucciones palinspásticas y modelado cinemático y mecánico en 2D y 3D.",
+    "keywords": ["modelado geológico", "modelos análogos", "palinspástica", "2D", "3D"],
+    "relatedLabs": ["modelado-geologico"],
+    "relatedPeople": ["ernesto-cristallini", "berenice-plotek", "mauro-spagnuolo"],
     "relatedPublications": []
   }
 ]

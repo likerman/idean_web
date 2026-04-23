@@ -1,128 +1,700 @@
 {
   "coverageNote": {
-    "title": "Cobertura parcial en normalización",
-    "text": "Esta primera versión reúne perfiles y referencias personales identificadas en fuentes públicas vinculadas a IDEAN. El directorio completo del instituto se ampliará cuando se consolide un relevamiento institucional integral."
+    "title": "Directorio consolidado a partir del sitio original",
+    "text": "Esta lista representa el padrón histórico del IDEAN migrado desde el sitio espejo institucional. Incluye autoridades, investigadores, becarios y personal técnico/administrativo vinculados a sus respectivos laboratorios."
   },
   "groups": [
     {
       "id": "autoridades",
-      "title": "Autoridades y referentes institucionales",
-      "description": "Perfiles con función institucional o dirección de grupos identificados en fuentes públicas.",
+      "title": "Autoridades y Consejo Interno",
+      "description": "Responsables de la dirección y el gobierno interno del instituto.",
       "people": [
         {
-          "id": "pablo-pazos",
-          "name": "Dr. Pablo José Pazos",
-          "role": "Director del IDEAN · Investigador del CONICET",
+          "id": "ernesto-cristallini",
+          "name": "Dr. Ernesto O. Cristallini",
+          "role": "Director IDEAN · Investigador Principal CONICET · Profesor Titular UBA",
           "affiliation": "IDEAN · UBA · CONICET",
-          "area": "Icnología, sedimentología y sustrato",
-          "summary": "Identificado públicamente como director del instituto y referente del Grupo de Icnología, Sedimentología y Sustrato (GISS).",
-          "email": "idean@gl.fcen.uba.ar",
-          "relatedResearchAreas": ["paleontologia-sedimentologia", "procesos-superficiales-riesgos"],
-          "relatedLabs": ["giss"],
-          "sourceLabel": "Nota de Nex Ciencia sobre huellas fósiles",
-          "sourceUrl": "https://nexciencia.exactas.uba.ar/huellas-fosiles-estegosaurios-cuenca-neuquina-icnologia-pablo-pazos"
+          "area": "Geología Estructural y Modelado",
+          "summary": "Director del instituto y responsable del Laboratorio de Modelado Geológico.",
+          "email": "direccionidean@gl.fcen.uba.ar",
+          "image": "assets/images/mirror/people/cristallini.jpg",
+          "relatedLabs": ["modelado-geologico"],
+          "sourceUrl": "http://www.idean.gl.fcen.uba.ar/autoridades/"
         },
         {
-          "id": "dario-lazo",
-          "name": "Dr. Darío G. Lazo",
-          "role": "Director del Laboratorio de Ecosistemas Marinos Fósiles",
-          "affiliation": "IDEAN · Departamento de Ciencias Geológicas · CONICET",
-          "area": "Paleontología y ecosistemas marinos fósiles",
-          "summary": "Director del laboratorio de Ecosistemas Marinos Fósiles según la información pública difundida por Exactas UBA.",
-          "relatedResearchAreas": ["paleontologia-sedimentologia"],
-          "relatedLabs": ["ecosistemas-marinos-fosiles"],
-          "sourceLabel": "Nota de Exactas UBA: Cuando la montaña era mar",
-          "sourceUrl": "https://exactas.uba.ar/?p=26072"
+          "id": "vanesa-litvak",
+          "name": "Dra. Vanesa D. Litvak",
+          "role": "Consejo Interno · Investigadora Independiente CONICET · Profesora Asistente UBA",
+          "affiliation": "IDEAN · UBA · CONICET",
+          "area": "Petrología y Geoquímica",
+          "summary": "Miembro del Consejo Interno e investigadora del Laboratorio de Geodinámica.",
+          "image": "assets/images/mirror/people/litvak.jpg",
+          "relatedLabs": ["geodinamica"],
+          "sourceUrl": "http://www.idean.gl.fcen.uba.ar/autoridades/"
+        },
+        {
+          "id": "diego-winocur",
+          "name": "Dr. Diego Winocur",
+          "role": "Consejo Interno · Jefe de Trabajos Prácticos UBA",
+          "affiliation": "IDEAN · UBA",
+          "area": "Geomorfología · Tectónica Andina",
+          "summary": "Miembro del Consejo Interno e investigador del Laboratorio de Tectónica Andina.",
+          "relatedLabs": ["tectonica-andina"],
+          "sourceUrl": "http://www.idean.gl.fcen.uba.ar/autoridades/"
+        },
+        {
+          "id": "lucia-sagripanti",
+          "name": "Dra. Lucía Sagripanti",
+          "role": "Consejo Interno · Investigadora Asistente CONICET · Ayudante UBA",
+          "affiliation": "IDEAN · UBA · CONICET",
+          "area": "Tectónica y Neotectónica Andina",
+          "summary": "Miembro del Consejo Interno e investigadora del Laboratorio de Geodinámica.",
+          "relatedLabs": ["geodinamica"],
+          "sourceUrl": "http://www.idean.gl.fcen.uba.ar/autoridades/"
+        },
+        {
+          "id": "leandro-gaetano",
+          "name": "Dr. Leandro C. Gaetano",
+          "role": "Consejo Interno · Investigador Adjunto CONICET · Jefe de Trabajos Prácticos UBA",
+          "affiliation": "IDEAN · UBA · CONICET",
+          "area": "Paleontología de Vertebrados",
+          "summary": "Miembro del Consejo Interno e investigador del Grupo de Estudios Paleobiológicos.",
+          "relatedLabs": ["paleobiologicos"],
+          "sourceUrl": "http://www.idean.gl.fcen.uba.ar/autoridades/"
+        },
+        {
+          "id": "maria-clara-lamberti",
+          "name": "Dra. María Clara Lamberti",
+          "role": "Consejo Interno · Investigadora Asistente CONICET",
+          "affiliation": "IDEAN · CONICET",
+          "area": "Volcanes Activos",
+          "summary": "Miembro del Consejo Interno e investigadora del Grupo de Estudio y Seguimiento de Volcanes Activos.",
+          "relatedLabs": ["gesva"],
+          "sourceUrl": "http://www.idean.gl.fcen.uba.ar/autoridades/"
         }
       ]
     },
     {
       "id": "investigadores",
-      "title": "Investigadores y docentes identificados en fuentes públicas",
-      "description": "Selección inicial de perfiles con mención pública verificable en actividades, notas o espacios académicos vinculados a IDEAN.",
+      "title": "Investigadores e Investigadoras",
+      "description": "Cuerpo científico de investigadores del CONICET y docentes de la UBA.",
       "people": [
+        {
+          "id": "beatriz-aguirre-urreta",
+          "name": "Dra. Beatriz Aguirre-Urreta",
+          "role": "Investigadora Superior CONICET · Profesora Titular Plenaria UBA",
+          "affiliation": "IDEAN · UBA · CONICET",
+          "area": "Bioestratigrafía de Alta Resolución",
+          "relatedLabs": ["bioestratigrafia-alta-resolucion"],
+          "sourceUrl": "http://www.idean.gl.fcen.uba.ar/integrantes/"
+        },
+        {
+          "id": "andres-folguera",
+          "name": "Dr. Andrés Folguera",
+          "role": "Investigador Principal CONICET · Profesor Asociado UBA",
+          "affiliation": "IDEAN · UBA · CONICET",
+          "area": "Tectónica Andina y Geodinámica",
+          "relatedLabs": ["geodinamica"],
+          "sourceUrl": "http://www.idean.gl.fcen.uba.ar/integrantes/"
+        },
+        {
+          "id": "dario-lazo",
+          "name": "Dr. Darío G. Lazo",
+          "role": "Investigador Principal CONICET · Profesor Asociado UBA",
+          "affiliation": "IDEAN · UBA · CONICET",
+          "area": "Ecosistemas Marinos Fósiles",
+          "relatedLabs": ["ecosistemas-marinos-fosiles"],
+          "sourceUrl": "http://www.idean.gl.fcen.uba.ar/integrantes/"
+        },
+        {
+          "id": "claudia-marsicano",
+          "name": "Dra. Claudia A. Marsicano",
+          "role": "Investigadora Principal CONICET · Profesora Asociada UBA",
+          "affiliation": "IDEAN · UBA · CONICET",
+          "area": "Paleobiología de Vertebrados",
+          "relatedLabs": ["paleobiologicos"],
+          "sourceUrl": "http://www.idean.gl.fcen.uba.ar/integrantes/"
+        },
+        {
+          "id": "pablo-pazos",
+          "name": "Dr. Pablo J. Pazos",
+          "role": "Investigador Principal CONICET · Profesor Asociado UBA",
+          "affiliation": "IDEAN · UBA · CONICET",
+          "area": "Sedimentología e Icnología",
+          "relatedLabs": ["giss"],
+          "sourceUrl": "http://www.idean.gl.fcen.uba.ar/integrantes/"
+        },
+        {
+          "id": "matias-ghiglione",
+          "name": "Dr. Matías Ghiglione",
+          "role": "Investigador Independiente CONICET · Profesor Adjunto UBA",
+          "affiliation": "IDEAN · UBA · CONICET",
+          "area": "Tectónica Andina",
+          "relatedLabs": ["tectonica-andina"],
+          "sourceUrl": "http://www.idean.gl.fcen.uba.ar/integrantes/"
+        },
+        {
+          "id": "cecilia-laprida",
+          "name": "Dra. Cecilia Laprida",
+          "role": "Investigadora Independiente CONICET · Profesora Adjunta UBA",
+          "affiliation": "IDEAN · UBA · CONICET",
+          "area": "Micropaleontología y Paleoclimatología",
+          "relatedLabs": ["scama"],
+          "sourceUrl": "http://www.idean.gl.fcen.uba.ar/integrantes/"
+        },
+        {
+          "id": "mariano-agusto",
+          "name": "Dr. Mariano R. Agusto",
+          "role": "Investigador Adjunto CONICET · Profesor Adjunto UBA",
+          "affiliation": "IDEAN · UBA · CONICET",
+          "area": "Volcanes Activos",
+          "relatedLabs": ["gesva"],
+          "sourceUrl": "http://www.idean.gl.fcen.uba.ar/integrantes/"
+        },
         {
           "id": "mauro-spagnuolo",
           "name": "Dr. Mauro G. Spagnuolo",
-          "role": "Investigador Adjunto CONICET · Docente",
+          "role": "Investigador Adjunto CONICET · Jefe de Trabajos Prácticos UBA",
           "affiliation": "IDEAN · UBA · CONICET",
-          "area": "Geología planetaria y geomorfología comparada",
-          "summary": "Investigador asociado a IDEAN y a la geología planetaria, con trabajo en Marte, Venus y comparación de procesos terrestres y planetarios.",
-          "relatedResearchAreas": ["geologia-planetaria", "tectonica-andina"],
-          "relatedLabs": ["geologia-planetaria"],
-          "sourceLabel": "Perfil público en +Talento Exactas y nota de Exactas UBA",
-          "sourceUrl": "https://exactas.uba.ar/evento/mastalento/inicio/charlas/"
+          "area": "Planetología",
+          "relatedLabs": ["tectonica-andina", "modelado-geologico"],
+          "sourceUrl": "http://www.idean.gl.fcen.uba.ar/integrantes/"
         },
         {
-          "id": "diego-winocur",
-          "name": "Dr. Diego A. Winocur",
-          "role": "Laboratorio de Tectónica Andina · Grupo de Evaluación de Riesgos Naturales y Antrópicos",
+          "id": "victor-ramos",
+          "name": "Dr. Víctor A. Ramos",
+          "role": "Investigador Emérito CONICET · Profesor Titular Emérito UBA",
           "affiliation": "IDEAN · UBA · CONICET",
-          "area": "Riesgos geológicos, tectónica andina y evaluación del paisaje",
-          "summary": "Referente público del Grupo de Evaluación de Riesgos Naturales y Antrópicos vinculado al Laboratorio de Tectónica Andina.",
-          "email": "winocur@gl.fcen.uba.ar",
-          "relatedResearchAreas": ["tectonica-andina", "procesos-superficiales-riesgos"],
+          "area": "Geología Estructural y Tectónica",
           "relatedLabs": ["tectonica-andina"],
-          "sourceLabel": "Resumen de Jornadas Socioambientales 2023",
-          "sourceUrl": "https://exactas.uba.ar/evento/jornadas-socioambientales/resumenes-2023/crisis-ambiental-2/"
+          "sourceUrl": "http://www.idean.gl.fcen.uba.ar/integrantes/"
+        },
+        {
+          "id": "graciela-vujovich",
+          "name": "Dra. Graciela I. Vujovich",
+          "role": "Investigadora Independiente CONICET · Profesora Adjunta UBA",
+          "affiliation": "IDEAN · UBA · CONICET",
+          "area": "Petrología y Tectónica",
+          "relatedLabs": ["tectonica-andina"],
+          "sourceUrl": "http://www.idean.gl.fcen.uba.ar/integrantes/"
+        },
+        {
+          "id": "eduardo-ottone",
+          "name": "Dr. Eduardo G. Ottone",
+          "role": "Investigador Independiente CONICET · Profesor Asociado UBA",
+          "affiliation": "IDEAN · UBA · CONICET",
+          "area": "Paleobiología de Vertebrados",
+          "relatedLabs": ["paleobiologicos"],
+          "sourceUrl": "http://www.idean.gl.fcen.uba.ar/integrantes/"
+        },
+        {
+          "id": "florencia-boedo",
+          "name": "Dra. Florencia L. Boedo",
+          "role": "Investigadora Adjunta CONICET · Ayudante UBA",
+          "affiliation": "IDEAN · UBA · CONICET",
+          "area": "Tectónica Andina",
+          "relatedLabs": ["tectonica-andina"],
+          "sourceUrl": "http://www.idean.gl.fcen.uba.ar/integrantes/"
+        },
+        {
+          "id": "marcela-cichowolski",
+          "name": "Dra. Marcela Cichowolski",
+          "role": "Investigadora Adjunta CONICET · Ayudante UBA",
+          "affiliation": "IDEAN · UBA · CONICET",
+          "area": "Bioestratigrafía de Alta Resolución",
+          "relatedLabs": ["bioestratigrafia-alta-resolucion"],
+          "sourceUrl": "http://www.idean.gl.fcen.uba.ar/integrantes/"
+        },
+        {
+          "id": "leandro-gaetano-investigador",
+          "name": "Dr. Leandro C. Gaetano",
+          "role": "Investigador Adjunto CONICET · Jefe de Trabajos Prácticos UBA",
+          "affiliation": "IDEAN · UBA · CONICET",
+          "area": "Paleobiología de Vertebrados",
+          "relatedLabs": ["paleobiologicos"],
+          "sourceUrl": "http://www.idean.gl.fcen.uba.ar/integrantes/"
+        },
+        {
+          "id": "veronica-krapovickas",
+          "name": "Dra. Verónica Krapovickas",
+          "role": "Investigadora Adjunta CONICET · Jefa de Trabajos Prácticos UBA",
+          "affiliation": "IDEAN · UBA · CONICET",
+          "area": "Paleobiología de Vertebrados",
+          "relatedLabs": ["paleobiologicos"],
+          "sourceUrl": "http://www.idean.gl.fcen.uba.ar/integrantes/"
+        },
+        {
+          "id": "juan-martin-leardi",
+          "name": "Dr. Juan Martín Leardi",
+          "role": "Investigador Adjunto CONICET · Jefe de Trabajos Prácticos UBA",
+          "affiliation": "IDEAN · UBA · CONICET",
+          "area": "Paleobiología de Vertebrados",
+          "relatedLabs": ["paleobiologicos"],
+          "sourceUrl": "http://www.idean.gl.fcen.uba.ar/integrantes/"
+        },
+        {
+          "id": "jeremias-likerman",
+          "name": "Dr. Jeremías Likerman",
+          "role": "Investigador Adjunto CONICET · Jefe de Trabajos Prácticos UBA",
+          "affiliation": "IDEAN · UBA · CONICET",
+          "area": "Geología Estructural y Modelado",
+          "relatedLabs": ["modelado-geologico"],
+          "sourceUrl": "http://www.idean.gl.fcen.uba.ar/integrantes/"
         },
         {
           "id": "daniel-perez",
           "name": "Dr. Daniel J. Pérez",
-          "role": "Integrante del Laboratorio de Tectónica Andina · Docencia de posgrado y doctorado",
-          "affiliation": "IDEAN · FCEN UBA",
-          "area": "Aplicación de sensores remotos en Geología",
-          "summary": "Responsable de un curso de posgrado y doctorado sobre remotos y su aplicación en Geología en el ámbito del Laboratorio de Tectónica Andina.",
-          "email": "daniel@gl.fcen.uba.ar",
-          "relatedResearchAreas": ["tectonica-andina"],
+          "role": "Investigador Adjunto CONICET · Profesor Adjunto UBA",
+          "affiliation": "IDEAN · UBA · CONICET",
+          "area": "Tectónica Andina",
           "relatedLabs": ["tectonica-andina"],
-          "sourceLabel": "Agenda de Exactas UBA",
-          "sourceUrl": "https://exactas.uba.ar/agenda/?mc_id=1448"
+          "sourceUrl": "http://www.idean.gl.fcen.uba.ar/integrantes/"
+        },
+        {
+          "id": "miguel-ramos",
+          "name": "Dr. Miguel E. Ramos",
+          "role": "Investigador Adjunto CONICET · Jefe de Trabajos Prácticos UBA",
+          "affiliation": "IDEAN · UBA · CONICET",
+          "area": "Tectónica Andina",
+          "relatedLabs": ["tectonica-andina"],
+          "sourceUrl": "http://www.idean.gl.fcen.uba.ar/integrantes/"
+        },
+        {
+          "id": "cecilia-rodriguez-amenabar",
+          "name": "Dra. Cecilia Rodríguez Amenábar",
+          "role": "Investigadora Adjunta CONICET · Ayudante UBA",
+          "affiliation": "IDEAN · UBA · CONICET",
+          "area": "Bioestratigrafía de Alta Resolución",
+          "relatedLabs": ["bioestratigrafia-alta-resolucion"],
+          "sourceUrl": "http://www.idean.gl.fcen.uba.ar/integrantes/"
+        },
+        {
+          "id": "diego-winocur-investigador",
+          "name": "Dr. Diego Winocur",
+          "role": "Jefe de Trabajos Prácticos UBA",
+          "affiliation": "IDEAN · UBA",
+          "area": "Tectónica Andina",
+          "relatedLabs": ["tectonica-andina"],
+          "sourceUrl": "http://www.idean.gl.fcen.uba.ar/integrantes/"
+        },
+        {
+          "id": "graciela-bressan",
+          "name": "Dra. Graciela Bressan",
+          "role": "Investigadora Asistente CONICET",
+          "affiliation": "IDEAN · CONICET",
+          "area": "Ecosistemas Marinos Fósiles",
+          "relatedLabs": ["ecosistemas-marinos-fosiles"],
+          "sourceUrl": "http://www.idean.gl.fcen.uba.ar/integrantes/"
+        },
+        {
+          "id": "andrea-carames",
+          "name": "Dra. Andrea A. Caramés",
+          "role": "Investigadora Asistente CONICET",
+          "affiliation": "IDEAN · CONICET",
+          "area": "Bioestratigrafía de Alta Resolución",
+          "relatedLabs": ["bioestratigrafia-alta-resolucion"],
+          "sourceUrl": "http://www.idean.gl.fcen.uba.ar/integrantes/"
+        },
+        {
+          "id": "cecilia-cataldo",
+          "name": "Dra. Cecilia S. Cataldo",
+          "role": "Investigadora Asistente CONICET · Jefa de Trabajos Prácticos UBA",
+          "affiliation": "IDEAN · UBA · CONICET",
+          "area": "Ecosistemas Marinos Fósiles",
+          "relatedLabs": ["ecosistemas-marinos-fosiles"],
+          "sourceUrl": "http://www.idean.gl.fcen.uba.ar/integrantes/"
+        },
+        {
+          "id": "diana-fernandez",
+          "name": "Dra. Diana E. Fernández",
+          "role": "Investigadora Asistente CONICET · Jefa de Trabajos Prácticos UBA",
+          "affiliation": "IDEAN · UBA · CONICET",
+          "area": "Icnología, Sedimentología y Sustrato",
+          "relatedLabs": ["giss"],
+          "sourceUrl": "http://www.idean.gl.fcen.uba.ar/integrantes/"
+        },
+        {
+          "id": "leticia-luci",
+          "name": "Dra. Leticia Luci",
+          "role": "Investigadora Asistente CONICET · Jefa de Trabajos Prácticos UBA",
+          "affiliation": "IDEAN · UBA · CONICET",
+          "area": "Ecosistemas Marinos Fósiles",
+          "relatedLabs": ["ecosistemas-marinos-fosiles"],
+          "sourceUrl": "http://www.idean.gl.fcen.uba.ar/integrantes/"
+        },
+        {
+          "id": "daniel-yagupsky",
+          "name": "Dr. Daniel L. Yagupsky",
+          "role": "Investigador Adjunto CONICET",
+          "affiliation": "IDEAN · CONICET",
+          "area": "Geología Estructural y Modelado",
+          "relatedLabs": ["modelado-geologico"],
+          "sourceUrl": "http://www.idean.gl.fcen.uba.ar/integrantes/"
         }
       ]
     },
     {
-      "id": "formacion",
-      "title": "Formación avanzada y trayectorias académicas",
-      "description": "Tesis doctorales y de grado asociadas a IDEAN que permiten identificar trayectorias y líneas de formación.",
+      "id": "becarios",
+      "title": "Becarios y Becarias",
+      "description": "Estudiantes de doctorado y posdoctorado en formación.",
       "people": [
         {
-          "id": "lucia-sagripanti",
-          "name": "Dra. Lucía Sagripanti",
-          "role": "Tesis doctoral desarrollada en IDEAN",
-          "affiliation": "IDEAN",
-          "area": "Evolución tectónica del orógeno andino",
-          "summary": "Autora de una tesis doctoral sobre la evolución tectónica del orógeno andino entre 36° y 37° S, desarrollada en el ámbito del instituto.",
-          "relatedResearchAreas": ["tectonica-andina"],
-          "relatedLabs": ["tectonica-andina"],
-          "sourceLabel": "Biblioteca Digital Exactas UBA",
-          "sourceUrl": "https://bibliotecadigital.exactas.uba.ar/collection/tesis/document/tesis_n5698_Sagripanti"
+          "id": "berenice-plotek",
+          "name": "Dra. Berenice L. Plotek",
+          "role": "Becaria Posdoctoral CONICET",
+          "affiliation": "IDEAN · CONICET",
+          "area": "Modelado Geológico",
+          "relatedLabs": ["modelado-geologico"],
+          "sourceUrl": "http://www.idean.gl.fcen.uba.ar/integrantes/"
         },
         {
-          "id": "andres-echaurren",
-          "name": "Dr. Andrés Echaurren González",
-          "role": "Tesis doctoral desarrollada en IDEAN",
-          "affiliation": "IDEAN",
-          "area": "Evolución tectónica andina en Patagonia norte",
-          "summary": "Autor de una tesis doctoral sobre evolución tectónica del sistema orogénico andino en Patagonia norte, asociada al instituto.",
-          "relatedResearchAreas": ["tectonica-andina"],
+          "id": "gonzalo-ronda",
+          "name": "Dr. Gonzalo Ronda",
+          "role": "Becario Posdoctoral CONICET",
+          "affiliation": "IDEAN · CONICET",
+          "area": "Tectónica Andina",
           "relatedLabs": ["tectonica-andina"],
-          "sourceLabel": "Biblioteca Digital Exactas UBA",
-          "sourceUrl": "https://bibliotecadigital.exactas.uba.ar/collection/tesis/document/tesis_n6187_EchaurrenGonzalez"
+          "sourceUrl": "http://www.idean.gl.fcen.uba.ar/integrantes/"
         },
         {
-          "id": "maria-sofia-plastani",
-          "name": "Dra. María Sofía Plastani",
-          "role": "Tesis doctoral en SCAMa-IDEAN",
-          "affiliation": "IDEAN · Laboratorio de Sondeos de Ambientes Continentales y Marinos",
-          "area": "Paleolimnología y reconstrucción ambiental",
-          "summary": "Autora de una tesis doctoral en el laboratorio SCAMa sobre ostrácodos y paleolimnología del sur de la pampa bonaerense.",
-          "relatedResearchAreas": ["paleontologia-sedimentologia", "procesos-superficiales-riesgos"],
+          "id": "agustina-toscano",
+          "name": "Dra. Agustina Toscano",
+          "role": "Becaria Posdoctoral CONICET",
+          "affiliation": "IDEAN · CONICET",
+          "area": "Paleontología Marina",
+          "relatedLabs": ["ecosistemas-marinos-fosiles"],
+          "sourceUrl": "http://www.idean.gl.fcen.uba.ar/integrantes/"
+        },
+        {
+          "id": "eliana-acevedo",
+          "name": "Lic. Eliana B. Acevedo",
+          "role": "Becaria Doctoral CONICET",
+          "affiliation": "IDEAN · CONICET",
+          "area": "Geodinámica",
+          "relatedLabs": ["geodinamica"],
+          "sourceUrl": "http://www.idean.gl.fcen.uba.ar/integrantes/"
+        },
+        {
+          "id": "gregorio-boixart",
+          "name": "Lic. Gregorio Boixart",
+          "role": "Becario Doctoral CONICET",
+          "affiliation": "IDEAN · CONICET",
+          "area": "Volcanes Activos",
+          "relatedLabs": ["gesva"],
+          "sourceUrl": "http://www.idean.gl.fcen.uba.ar/integrantes/"
+        },
+        {
+          "id": "lucas-fennell",
+          "name": "Dr. Lucas M. Fennell",
+          "role": "Investigador Asistente CONICET · Ayudante UBA",
+          "affiliation": "IDEAN · UBA · CONICET",
+          "area": "Geodinámica",
+          "relatedLabs": ["geodinamica"],
+          "sourceUrl": "http://www.idean.gl.fcen.uba.ar/integrantes/"
+        },
+        {
+          "id": "vanesa-barberon",
+          "name": "Dra. Vanesa Barberón",
+          "role": "Ayudante UBA",
+          "affiliation": "IDEAN · UBA",
+          "area": "Tectónica Andina",
+          "relatedLabs": ["tectonica-andina"],
+          "sourceUrl": "http://www.idean.gl.fcen.uba.ar/integrantes/"
+        },
+        {
+          "id": "lucia-fernandez-paz",
+          "name": "Dra. Lucía Fernández Paz",
+          "role": "Geodinámica",
+          "affiliation": "IDEAN",
+          "area": "Geodinámica",
+          "relatedLabs": ["geodinamica"],
+          "sourceUrl": "http://www.idean.gl.fcen.uba.ar/integrantes/"
+        },
+        {
+          "id": "natalia-garcia-chapori",
+          "name": "Dra. Natalia L. García Chapori",
+          "role": "Investigadora Asistente CONICET",
+          "affiliation": "IDEAN · CONICET",
+          "area": "Paleoceanografía",
           "relatedLabs": ["scama"],
-          "sourceLabel": "Biblioteca Digital Exactas UBA",
-          "sourceUrl": "https://bibliotecadigital.exactas.uba.ar/collection/tesis/document/tesis_n6092_Plastani"
+          "sourceUrl": "http://www.idean.gl.fcen.uba.ar/integrantes/"
+        },
+        {
+          "id": "carolina-gutierrez",
+          "name": "Dra. Carolina Gutiérrez",
+          "role": "Icnología, Sedimentología y Sustrato",
+          "affiliation": "IDEAN",
+          "area": "Icnología",
+          "relatedLabs": ["giss"],
+          "sourceUrl": "http://www.idean.gl.fcen.uba.ar/integrantes/"
+        },
+        {
+          "id": "cecilia-guzman",
+          "name": "Dra. Cecilia G. Guzmán",
+          "role": "Investigadora Asistente CONICET",
+          "affiliation": "IDEAN · CONICET",
+          "area": "Geología Estructural y Modelado",
+          "relatedLabs": ["modelado-geologico"],
+          "sourceUrl": "http://www.idean.gl.fcen.uba.ar/integrantes/"
+        },
+        {
+          "id": "sofia-iannelli",
+          "name": "Dra. Sofía B. Iannelli",
+          "role": "Investigadora Asistente CONICET",
+          "affiliation": "IDEAN · CONICET",
+          "area": "Geodinámica",
+          "relatedLabs": ["geodinamica"],
+          "sourceUrl": "http://www.idean.gl.fcen.uba.ar/integrantes/"
+        },
+        {
+          "id": "marina-lescano",
+          "name": "Dra. Marina A. Lescano",
+          "role": "Investigadora Asistente CONICET",
+          "affiliation": "IDEAN · CONICET",
+          "area": "Micropaleontología y Bioestratigrafía",
+          "relatedLabs": ["bioestratigrafia-alta-resolucion"],
+          "sourceUrl": "http://www.idean.gl.fcen.uba.ar/integrantes/"
+        },
+        {
+          "id": "ana-lossada",
+          "name": "Dra. Ana C. Lossada",
+          "role": "Investigadora Asistente CONICET",
+          "affiliation": "IDEAN · CONICET",
+          "area": "Tectónica Andina",
+          "relatedLabs": ["tectonica-andina"],
+          "sourceUrl": "http://www.idean.gl.fcen.uba.ar/integrantes/"
+        },
+        {
+          "id": "sofia-plastani",
+          "name": "Dra. María Sofía Plastani",
+          "role": "Investigadora Asistente CONICET",
+          "affiliation": "IDEAN · CONICET",
+          "area": "Sondeos de Ambientes Continentales y Marinos",
+          "relatedLabs": ["scama"],
+          "sourceUrl": "http://www.idean.gl.fcen.uba.ar/integrantes/"
+        },
+        {
+          "id": "lucia-sagripanti-investigadora",
+          "name": "Dra. Lucía Sagripanti",
+          "role": "Investigadora Asistente CONICET · Ayudante UBA",
+          "affiliation": "IDEAN · UBA · CONICET",
+          "area": "Tectónica y Neotectónica Andina",
+          "relatedLabs": ["geodinamica"],
+          "sourceUrl": "http://www.idean.gl.fcen.uba.ar/integrantes/"
+        },
+        {
+          "id": "federico-seoane",
+          "name": "Dr. Federico Seoane",
+          "role": "Investigador Asistente CONICET",
+          "affiliation": "IDEAN · CONICET",
+          "area": "Estudios Paleobiológicos",
+          "relatedLabs": ["paleobiologicos"],
+          "sourceUrl": "http://www.idean.gl.fcen.uba.ar/integrantes/"
+        },
+        {
+          "id": "felipe-tapia",
+          "name": "Dr. Felipe Tapia",
+          "role": "Investigador Asistente CONICET",
+          "affiliation": "IDEAN · CONICET",
+          "area": "Geología Estructural y Modelado",
+          "relatedLabs": ["modelado-geologico"],
+          "sourceUrl": "http://www.idean.gl.fcen.uba.ar/integrantes/"
+        },
+        {
+          "id": "jonathan-tobal",
+          "name": "Dr. Jonathan Tobal",
+          "role": "Investigador Asistente CONICET · Ayudante UBA",
+          "affiliation": "IDEAN · UBA · CONICET",
+          "area": "Tectónica Andina",
+          "relatedLabs": ["tectonica-andina"],
+          "sourceUrl": "http://www.idean.gl.fcen.uba.ar/integrantes/"
+        },
+        {
+          "id": "maria-laura-velez",
+          "name": "Dra. María Laura Vélez",
+          "role": "Ayudante UBA",
+          "affiliation": "IDEAN · UBA",
+          "area": "Volcanología y Geofísica",
+          "relatedLabs": ["gesva"],
+          "sourceUrl": "http://www.idean.gl.fcen.uba.ar/integrantes/"
+        },
+        {
+          "id": "alejandra-andrada",
+          "name": "Lic. Alejandra M. Andrada",
+          "role": "Becaria Doctoral CONICET",
+          "affiliation": "IDEAN · CONICET",
+          "area": "Ecosistemas Marinos Fósiles",
+          "relatedLabs": ["ecosistemas-marinos-fosiles"],
+          "sourceUrl": "http://www.idean.gl.fcen.uba.ar/integrantes/"
+        },
+        {
+          "id": "clara-correa-luna",
+          "name": "Lic. Clara Correa Luna",
+          "role": "Becaria Doctoral CONICET",
+          "affiliation": "IDEAN · CONICET",
+          "area": "Modelado Geológico",
+          "relatedLabs": ["modelado-geologico"],
+          "sourceUrl": "http://www.idean.gl.fcen.uba.ar/integrantes/"
+        },
+        {
+          "id": "joaquin-llano",
+          "name": "Lic. Joaquín Llano",
+          "role": "Becario Doctoral CONICET",
+          "affiliation": "IDEAN · CONICET",
+          "area": "Volcanes Activos",
+          "relatedLabs": ["gesva"],
+          "sourceUrl": "http://www.idean.gl.fcen.uba.ar/integrantes/"
+        },
+        {
+          "id": "mara-mantegazza",
+          "name": "Lic. Mara Mantegazza",
+          "role": "Becaria Doctoral CONICET",
+          "affiliation": "IDEAN · CONICET",
+          "area": "Tectónica Andina",
+          "relatedLabs": ["tectonica-andina"],
+          "sourceUrl": "http://www.idean.gl.fcen.uba.ar/integrantes/"
+        },
+        {
+          "id": "luciana-marin",
+          "name": "Lic. Luciana S. Marin",
+          "role": "Becaria Doctoral CONICET",
+          "affiliation": "IDEAN · CONICET",
+          "area": "Bioestratigrafía de Alta Resolución",
+          "relatedLabs": ["bioestratigrafia-alta-resolucion"],
+          "sourceUrl": "http://www.idean.gl.fcen.uba.ar/integrantes/"
+        },
+        {
+          "id": "daniela-martinez",
+          "name": "Lic. Daniela del Valle Martínez",
+          "role": "Becaria Doctoral CONICET",
+          "affiliation": "IDEAN · CONICET",
+          "area": "Estudios Paleobiológicos",
+          "relatedLabs": ["paleobiologicos"],
+          "sourceUrl": "http://www.idean.gl.fcen.uba.ar/integrantes/"
+        },
+        {
+          "id": "antonella-mazzensio",
+          "name": "Lic. Antonella Mazzensio",
+          "role": "Becaria Doctoral CONICET",
+          "affiliation": "IDEAN · CONICET",
+          "area": "Volcanes Activos",
+          "relatedLabs": ["gesva"],
+          "sourceUrl": "http://www.idean.gl.fcen.uba.ar/integrantes/"
+        },
+        {
+          "id": "daniel-moron-alfonso",
+          "name": "Lic. Daniel A. Morón-Alfonso",
+          "role": "Becario Doctoral CONICET",
+          "affiliation": "IDEAN · CONICET",
+          "area": "Bioestratigrafía de Alta Resolución",
+          "relatedLabs": ["bioestratigrafia-alta-resolucion"],
+          "sourceUrl": "http://www.idean.gl.fcen.uba.ar/integrantes/"
+        },
+        {
+          "id": "rocio-vera",
+          "name": "Lic. Rocío B. Vera",
+          "role": "Becaria Doctoral CONICET",
+          "affiliation": "IDEAN · CONICET",
+          "area": "Estudios Paleobiológicos",
+          "relatedLabs": ["paleobiologicos"],
+          "sourceUrl": "http://www.idean.gl.fcen.uba.ar/integrantes/"
+        }
+      ]
+    },
+    {
+      "id": "apoyo",
+      "title": "Personal de Apoyo y CPA",
+      "description": "Personal técnico y administrativo que brinda soporte a la investigación.",
+      "people": [
+        {
+          "id": "maria-paula-sulima",
+          "name": "María Paula Sulima",
+          "role": "Responsable Administrativa CONICET",
+          "affiliation": "IDEAN · CONICET",
+          "sourceUrl": "http://www.idean.gl.fcen.uba.ar/integrantes/"
+        },
+        {
+          "id": "eugenio-steimbach",
+          "name": "Eugenio I. Steimbach Fonrouge",
+          "role": "Técnico Asociado CONICET",
+          "affiliation": "IDEAN · CONICET",
+          "sourceUrl": "http://www.idean.gl.fcen.uba.ar/integrantes/"
+        },
+        {
+          "id": "ana-barreyra",
+          "name": "Ana C. Barreyra",
+          "role": "Técnica Asistente CONICET",
+          "affiliation": "IDEAN · CONICET",
+          "sourceUrl": "http://www.idean.gl.fcen.uba.ar/integrantes/"
+        },
+        {
+          "id": "diego-sapia",
+          "name": "Diego L. Sapia",
+          "role": "Técnico Asistente CONICET",
+          "affiliation": "IDEAN · CONICET",
+          "sourceUrl": "http://www.idean.gl.fcen.uba.ar/integrantes/"
+        },
+        {
+          "id": "martin-hoqui",
+          "name": "Dr. Martín Hoqui",
+          "role": "Técnico Asistente CONICET",
+          "affiliation": "IDEAN · CONICET",
+          "sourceUrl": "http://www.idean.gl.fcen.uba.ar/integrantes/"
+        },
+        {
+          "id": "juan-cruz-mannarino",
+          "name": "Juan Cruz Mannarino",
+          "role": "Técnico Asistente CONICET",
+          "affiliation": "IDEAN · CONICET",
+          "sourceUrl": "http://www.idean.gl.fcen.uba.ar/integrantes/"
+        }
+      ]
+    },
+    {
+      "id": "asociados_honorarios",
+      "title": "Investigadores Asociados y Honorarios",
+      "description": "Cuerpo académico de referencia y vínculos internacionales.",
+      "people": [
+        {
+          "id": "suzanne-kay",
+          "name": "Dra. Suzanne M. Kay",
+          "role": "Senior Research Associate IDEAN",
+          "affiliation": "Cornell University · IDEAN",
+          "area": "Geoquímica y Sismología",
+          "sourceUrl": "http://www.idean.gl.fcen.uba.ar/integrantes/"
+        },
+        {
+          "id": "peter-rawson",
+          "name": "Dr. Peter F. Rawson",
+          "role": "Senior Research Associate IDEAN",
+          "affiliation": "Hull University · IDEAN",
+          "area": "Paleontología y Bioestratigrafía",
+          "sourceUrl": "http://www.idean.gl.fcen.uba.ar/integrantes/"
+        },
+        {
+          "id": "carlos-azcuy",
+          "name": "Dr. Carlos Azcuy",
+          "role": "Investigador Retirado del CONICET",
+          "affiliation": "IDEAN · CONICET",
+          "sourceUrl": "http://www.idean.gl.fcen.uba.ar/integrantes/"
+        }
+      ]
+    },
+    {
+      "id": "adscriptos",
+      "title": "Miembros Adscriptos",
+      "description": "Investigadores vinculados formalmente a la estructura del instituto.",
+      "people": [
+        {
+          "id": "ricardo-palma",
+          "name": "Dr. Ricardo M. Palma",
+          "role": "Investigador Principal CONICET · Profesor Titular UBA",
+          "affiliation": "IDEAN · UBA · CONICET",
+          "area": "Sedimentología de Carbonatos y Cicloestratigrafía",
+          "sourceUrl": "http://www.idean.gl.fcen.uba.ar/integrantes/"
         }
       ]
     }
   ]
 }
+

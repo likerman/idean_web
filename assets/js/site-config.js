@@ -3,12 +3,17 @@ export const siteConfig = {
   fullName: "Instituto de Estudios Andinos Don Pablo Groeber",
   eyebrow: "Instituto UBA-CONICET de geociencias",
   tagline:
-    "Unidad Ejecutora dedicada al estudio de la formación de la Cordillera de los Andes, su evolución geológica y los procesos asociados.",
+    "Unidad Ejecutora dedicada al estudio de la formación de la Cordillera de los Andes, su registro fósil y los procesos geológicos asociados.",
   summary:
-    "El Instituto de Estudios Andinos Don Pablo Groeber desarrolla investigación en Ciencias de la Tierra con base en la Universidad de Buenos Aires y el CONICET, articulando investigación básica, formación avanzada y vinculación científica.",
+    "El Instituto de Estudios Andinos Don Pablo Groeber articula investigación básica, formación avanzada y capacidades científicas aplicadas para comprender la evolución de los Andes y sus registros geológicos, paleontológicos y ambientales.",
   description:
     "Sitio institucional del Instituto de Estudios Andinos Don Pablo Groeber (UBA-CONICET), dedicado al estudio de los Andes, la evolución geológica regional y las geociencias.",
   affiliations: ["Universidad de Buenos Aires", "CONICET", "FCEN"],
+  utilityLinks: [
+    { label: "Perfil institucional", href: "https://convocatorias.conicet.gov.ar/wp-content/uploads/sites/3/PERFIL-IDEAN.pdf" },
+    { label: "Sitio histórico", href: "http://www.idean.gl.fcen.uba.ar/" },
+    { label: "Servicios tecnológicos", href: "http://www.idean.gl.fcen.uba.ar/servicios-tecnologicos/" }
+  ],
   contact: {
     email: "idean@gl.fcen.uba.ar",
     phone: "+54 11 4576-3400 int. 200",
@@ -48,6 +53,13 @@ export const siteConfig = {
       { label: "CONICET", href: "https://www.conicet.gov.ar/" },
       { label: "Perfil institucional", href: "https://convocatorias.conicet.gov.ar/wp-content/uploads/sites/3/PERFIL-IDEAN.pdf" },
       { label: "Archivo histórico", href: "http://www.idean.gl.fcen.uba.ar/" }
+    ],
+    legacy: [
+      { label: "Quiénes somos", href: "http://www.idean.gl.fcen.uba.ar/quienes-somos/" },
+      { label: "Reseña histórica", href: "http://www.idean.gl.fcen.uba.ar/resena-historica/" },
+      { label: "Autoridades", href: "http://www.idean.gl.fcen.uba.ar/autoridades/" },
+      { label: "Integrantes", href: "http://www.idean.gl.fcen.uba.ar/integrantes/" },
+      { label: "Servicios tecnológicos", href: "http://www.idean.gl.fcen.uba.ar/servicios-tecnologicos/" }
     ]
   },
   pages: {
@@ -55,25 +67,25 @@ export const siteConfig = {
       title: "Institucional",
       kicker: "Perfil institucional",
       lead:
-        "El instituto organiza investigación, docencia y cooperación científica en torno al estudio de los Andes y de los sistemas geológicos vinculados a su evolución."
+        "El instituto organiza investigación, docencia y cooperación científica en torno a la evolución de los Andes, su registro fósil y los procesos geológicos y ambientales asociados."
     },
     miembros: {
       title: "Miembros",
       kicker: "Comunidad académica",
       lead:
-        "La estructura institucional reúne investigadores, investigadoras, docentes, tesistas y referentes de grupos identificados en fuentes públicas. Esta versión organiza un directorio inicial en proceso de normalización."
+        "La estructura institucional reúne autoridades, investigadores, becarios y personal técnico identificados en el sitio histórico de IDEAN y reorganizados en un directorio más claro y mantenible."
     },
     investigacion: {
       title: "Investigación",
       kicker: "Áreas y enfoques",
       lead:
-        "Las líneas de investigación combinan tectónica, paleontología, geodinámica, sedimentología, glaciología y geología planetaria con fuerte anclaje andino."
+        "Las líneas de investigación reflejan la organización científica histórica del instituto en tectónica andina, bioestratigrafía, geodinámica, paleoambientes, paleontología y modelado geológico."
     },
     laboratorios: {
       title: "Laboratorios y capacidades",
       kicker: "Plataformas científicas",
       lead:
-        "IDEAN articula laboratorios, grupos y capacidades metodológicas para el estudio de procesos geológicos complejos en ambientes andinos, cuencas sedimentarias y sistemas planetarios."
+        "IDEAN articula laboratorios y grupos históricos dedicados a tectónica, bioestratigrafía, paleontología, paleoambientes, geodinámica, sedimentología y modelado geológico."
     },
     "produccion-cientifica": {
       title: "Producción científica",
@@ -85,7 +97,7 @@ export const siteConfig = {
       title: "Servicios y vinculación",
       kicker: "Articulación científica",
       lead:
-        "La capacidad institucional se proyecta en formación, cooperación interdisciplinaria y aportes científicos para problemas de recursos, ambiente y riesgos geológicos."
+        "La capacidad institucional se proyecta en servicios tecnológicos, asesoramiento especializado, cooperación interdisciplinaria y aportes científicos para problemas de recursos, ambiente y riesgos geológicos."
     },
     novedades: {
       title: "Novedades",
@@ -97,7 +109,7 @@ export const siteConfig = {
       title: "Novedades",
       kicker: "Actualidad institucional",
       lead:
-        "Artículo normalizado a partir de contenido público ya existente en el sitio histórico de IDEAN."
+        "Artículo reorganizado a partir de contenido público ya existente en el sitio histórico y reciente de IDEAN."
     },
     contacto: {
       title: "Contacto",

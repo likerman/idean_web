@@ -2,6 +2,7 @@ import { siteConfig } from "./site-config.js";
 
 const page = document.body.dataset.page ?? "home";
 const isHome = page === "home";
+const desktopNavigationMedia = window.matchMedia("(min-width: 1101px)");
 
 async function fetchJson(path) {
   const response = await fetch(path);
@@ -15,6 +16,13 @@ function activeNavigationHref() {
 }
 
 function renderHeader() {
+  const utilityLinks = siteConfig.utilityLinks
+    .map(
+      (item) =>
+        `<a href="${item.href}" ${item.href.startsWith("http") ? 'target="_blank" rel="noopener noreferrer"' : ""}>${item.label}</a>`
+    )
+    .join("");
+
   const links = siteConfig.navigation
     .map(
       (item) => `
@@ -29,8 +37,13 @@ function renderHeader() {
     <header class="site-header" data-header>
       <div class="topbar">
         <div class="container topbar__inner">
-          <p class="topbar__eyebrow">${siteConfig.eyebrow}</p>
-          <p class="topbar__affiliations">${siteConfig.affiliations.join(" · ")}</p>
+          <div class="topbar__identity">
+            <p class="topbar__eyebrow">${siteConfig.eyebrow}</p>
+            <p class="topbar__affiliations">${siteConfig.affiliations.join(" · ")}</p>
+          </div>
+          <nav class="topbar__links" aria-label="Enlaces utilitarios">
+            ${utilityLinks}
+          </nav>
         </div>
       </div>
       <div class="container header-shell">
@@ -81,6 +94,13 @@ function renderFooter() {
     )
     .join("");
 
+  const legacy = siteConfig.footerNavigation.legacy
+    .map(
+      (item) =>
+        `<li><a href="${item.href}" ${item.href.startsWith("http") ? 'target="_blank" rel="noopener noreferrer"' : ""}>${item.label}</a></li>`
+    )
+    .join("");
+
   return `
     <footer class="site-footer">
       <div class="container footer-grid">
@@ -98,6 +118,11 @@ function renderFooter() {
         <nav class="footer-panel" aria-label="Enlaces institucionales">
           <h2 class="footer-title">Institucional</h2>
           <ul class="footer-list">${institutional}</ul>
+        </nav>
+
+        <nav class="footer-panel" aria-label="Archivo y continuidad">
+          <h2 class="footer-title">Archivo IDEAN</h2>
+          <ul class="footer-list">${legacy}</ul>
         </nav>
 
         <section class="footer-panel" aria-label="Contacto institucional">
@@ -132,10 +157,37 @@ function initNavigation() {
 
   if (!toggle || !nav) return;
 
+  const closeNavigation = () => {
+    toggle.setAttribute("aria-expanded", "false");
+    nav.classList.remove("is-open");
+  };
+
   toggle.addEventListener("click", () => {
     const expanded = toggle.getAttribute("aria-expanded") === "true";
     toggle.setAttribute("aria-expanded", String(!expanded));
     nav.classList.toggle("is-open", !expanded);
+  });
+
+  nav.querySelectorAll("a").forEach((link) => {
+    link.addEventListener("click", () => {
+      if (!desktopNavigationMedia.matches) closeNavigation();
+    });
+  });
+
+  document.addEventListener("click", (event) => {
+    if (desktopNavigationMedia.matches) return;
+    if (!nav.classList.contains("is-open")) return;
+    if (header?.contains(event.target)) return;
+    closeNavigation();
+  });
+
+  document.addEventListener("keydown", (event) => {
+    if (event.key !== "Escape") return;
+    closeNavigation();
+  });
+
+  desktopNavigationMedia.addEventListener("change", (event) => {
+    if (event.matches) closeNavigation();
   });
 
   window.addEventListener("scroll", () => {
@@ -195,6 +247,22 @@ function peopleLinks(person) {
   return items.join("");
 }
 
+function personAvatar(person) {
+  if (person.image) {
+    return `<img src="${person.image}" alt="Retrato de ${person.name}" />`;
+  }
+
+  const initials = person.name
+    .split(" ")
+    .filter(Boolean)
+    .slice(0, 2)
+    .map((part) => part[0])
+    .join("")
+    .toUpperCase();
+
+  return `<span class="person-card__initials" aria-hidden="true">${initials}</span>`;
+}
+
 function relationChips(items) {
   if (!items || items.length === 0) return "";
   return `<div class="chip-row">${items.map((item) => `<span class="chip">${item}</span>`).join("")}</div>`;
@@ -204,8 +272,8 @@ function personCard(person) {
   return `
     <article class="person-card">
       <div class="person-card__header">
-        <div class="person-card__avatar" aria-hidden="true">
-          <img src="assets/images/institutional/seal-idean.png" alt="" />
+        <div class="person-card__avatar">
+          ${personAvatar(person)}
         </div>
         <div>
           <h3 class="person-card__name">${person.name}</h3>
@@ -363,7 +431,8 @@ function contactCard(item) {
 }
 
 async function renderHome() {
-  const [news, researchAreas, labs, output, services] = await Promise.all([
+  const [institutional, news, researchAreas, labs, output, servicesData] = await Promise.all([
+    fetchJson("assets/data/institutional.json"),
     fetchJson("assets/data/news.json"),
     fetchJson("assets/data/research-areas.json"),
     fetchJson("assets/data/labs.json"),
@@ -386,7 +455,7 @@ async function renderHome() {
         <p class="hero__eyebrow">Universidad de Buenos Aires · CONICET</p>
         <h1 class="hero__title">${siteConfig.fullName}</h1>
         <p class="hero__lead">
-          Los objetivos del instituto están dirigidos a entender la formación de la Cordillera de los Andes, su relación con los desplazamientos de la placa Sudamericana y los procesos geológicos asociados.
+          ${institutional.overview.paragraphs[0]}
         </p>
         <div class="hero__actions">
           <a class="button button--primary" href="institucional.html">Conocé el instituto</a>
@@ -395,20 +464,20 @@ async function renderHome() {
       </div>
       <aside class="hero__aside" aria-label="Imagen institucional del instituto">
         <figure class="hero__figure">
-          <img src="assets/images/gallery/hero-andean-institute.jpg" alt="Paisaje andino asociado a las líneas de trabajo del instituto" />
+          <img src="assets/images/mirror/hero/andes.jpg" alt="Cordillera andina utilizada como imagen principal del sitio" />
         </figure>
         <div class="hero__facts">
           <article class="fact-card">
-            <strong>Andes</strong>
-            <span>Estudio de cadenas montañosas, cuencas, riesgos y evolución regional.</span>
+            <strong>2010</strong>
+            <span>Creación formal de IDEAN como unidad de doble dependencia entre la UBA y el CONICET.</span>
           </article>
           <article class="fact-card">
-            <strong>Geociencias</strong>
-            <span>Investigación básica, formación avanzada y producción científica.</span>
+            <strong>Multidisciplinario</strong>
+            <span>Integra tectónica, paleontología, bioestratigrafía, paleoambientes, geodinámica y modelado geológico.</span>
           </article>
           <article class="fact-card">
-            <strong>UBA-CONICET</strong>
-            <span>Inserción académica e institucional en Ciudad Universitaria.</span>
+            <strong>Ciudad Universitaria</strong>
+            <span>Sede institucional en el Pabellón II de la Facultad de Ciencias Exactas y Naturales.</span>
           </article>
         </div>
       </aside>
@@ -421,16 +490,16 @@ async function renderHome() {
         <div class="split-panel__content">
           ${createSectionHeader({
             eyebrow: "Institucional",
-            title: "Una plataforma de investigación para comprender la evolución de los Andes",
-            description:
-              "De acuerdo con su perfil institucional, IDEAN orienta sus objetivos al estudio de la formación de la Cordillera de los Andes, su evolución paleogeográfica y su importancia para la comprensión de recursos naturales y riesgos geológicos."
+            title: "Una unidad creada para estudiar los Andes desde múltiples escalas y registros",
+            description: institutional.overview.paragraphs[1]
           })}
           <p class="body-copy">
-            La base académica del instituto articula grupos y laboratorios vinculados a tectónica, paleontología, sedimentología, geodinámica, vulcanismo, glaciología y otros campos de las Ciencias de la Tierra con fuerte anclaje regional.
+            ${institutional.overview.paragraphs[2]}
           </p>
+          <a class="card__link" href="institucional.html">Ver perfil institucional completo</a>
         </div>
         <figure class="split-panel__media">
-          <img src="assets/images/gallery/institutional-profile.jpg" alt="Trabajo de campo e infraestructura científica vinculada al IDEAN" />
+          <img src="assets/images/mirror/hero/andes.jpg" alt="Paisaje andino asociado a la misión científica del instituto" />
         </figure>
       </div>
     `;
@@ -442,7 +511,7 @@ async function renderHome() {
         eyebrow: "Investigación",
         title: "Áreas prioritarias del instituto",
         description:
-          "Selección inicial basada en la estructura temática visible en el sitio actual y en publicaciones públicas asociadas al instituto.",
+          "Síntesis reorganizada a partir de laboratorios y grupos del sitio histórico de IDEAN, preservando su estructura científica de base.",
         linkLabel: "Ver investigación",
         linkHref: "investigacion.html"
       })}
@@ -458,7 +527,7 @@ async function renderHome() {
         eyebrow: "Novedades",
         title: "Noticias recientes y difusión institucional",
         description:
-          "Bloque preparado para conectarse a una carga editable de noticias en próximas fases.",
+          "Selección inicial conectada a un dataset editable de noticias ya normalizado para el sitio.",
         linkLabel: "Ir al archivo",
         linkHref: "novedades.html"
       })}
@@ -474,7 +543,7 @@ async function renderHome() {
         eyebrow: "Laboratorios y capacidades",
         title: "Plataformas y capacidades científicas",
         description:
-          "Resumen inicial de laboratorios, grupos o capacidades institucionales presentes en el ecosistema actual de IDEAN.",
+          "Laboratorios y grupos históricos del instituto reorganizados en una lectura más clara, con imágenes y descripciones recuperadas del sitio original.",
         linkLabel: "Ver laboratorios",
         linkHref: "laboratorios.html"
       })}
@@ -506,12 +575,12 @@ async function renderHome() {
         eyebrow: "Servicios y vinculación",
         title: "Capacidades institucionales proyectadas a formación y cooperación",
         description:
-          "Presentación inicial de capacidades del instituto basada en sus objetivos públicos y en el perfil de sus actividades científicas.",
+          "Catálogo inicial basado en los servicios tecnológicos públicos del sitio histórico de IDEAN y conectado a laboratorios y áreas de trabajo.",
         linkLabel: "Ver servicios",
         linkHref: "servicios.html"
       })}
       <div class="card-grid card-grid--compact">
-        ${services.map(serviceCard).join("")}
+        ${(servicesData.items || []).map(serviceCard).join("")}
       </div>
     `;
   }
@@ -784,7 +853,7 @@ async function renderInstitutionalPage() {
           ${createSectionHeader({
             eyebrow: "Autoridades",
             title: data.authorities.title,
-            description: "Información institucional pública incorporada en esta fase."
+            description: "Información recuperada de las páginas históricas de autoridades y del perfil institucional público."
           })}
           <div class="stack-grid">
             ${data.authorities.cards.map(infoCard).join("")}
@@ -792,12 +861,12 @@ async function renderInstitutionalPage() {
         </div>
         <div>
           ${createSectionHeader({
-            eyebrow: "Inserción",
-            title: data.relationships.title,
-            description: "Relación institucional del instituto con UBA, FCEN y CONICET."
+            eyebrow: "Ejes",
+            title: data.missionAxes.title,
+            description: "Síntesis de objetivos y dominios institucionales expresados en el sitio original del instituto."
           })}
           <div class="stack-grid">
-            ${data.relationships.items
+            ${data.missionAxes.items
               .map(
                 (item) => `
                   <article class="card card--compact">
@@ -813,10 +882,45 @@ async function renderInstitutionalPage() {
     </section>
 
     <section class="editorial-block">
-      <article class="status-note">
-        <h2 class="section-header__title">${data.governanceNote.title}</h2>
-        <p class="section-header__description">${data.governanceNote.text}</p>
-      </article>
+      ${createSectionHeader({
+        eyebrow: "Gobierno",
+        title: data.governance.title,
+        description: "Composición histórica recuperada desde la página de autoridades del sitio original."
+      })}
+      <div class="two-column-layout">
+        ${data.governance.sections
+          .map(
+            (section) => `
+              <article class="page-panel">
+                <h3 class="card__title">${section.title}</h3>
+                <ul class="plain-list">
+                  ${section.members.map((member) => `<li>${member}</li>`).join("")}
+                </ul>
+              </article>
+            `
+          )
+          .join("")}
+      </div>
+    </section>
+
+    <section class="editorial-block">
+      ${createSectionHeader({
+        eyebrow: "Inserción",
+        title: data.relationships.title,
+        description: "Ubicación institucional del instituto dentro del sistema UBA, FCEN y CONICET."
+      })}
+      <div class="card-grid card-grid--compact">
+        ${data.relationships.items
+          .map(
+            (item) => `
+              <article class="card card--compact">
+                <h3 class="card__title">${item.title}</h3>
+                <p class="card__text">${item.text}</p>
+              </article>
+            `
+          )
+          .join("")}
+      </div>
     </section>
 
     <section class="editorial-block">
@@ -877,7 +981,7 @@ async function renderNewsIndexPage() {
       ${createSectionHeader({
         eyebrow: "Archivo",
         title: "Más noticias del instituto",
-        description: "Listado inicial basado en contenidos ya publicados en el sitio histórico de IDEAN."
+        description: "Listado normalizado a partir de contenidos del sitio histórico y reciente de IDEAN."
       })}
       <div class="card-grid card-grid--news">
         ${rest.map(newsCard).join("")}
@@ -961,7 +1065,7 @@ async function renderScientificOutputPage() {
         eyebrow: "Panorama",
         title: "Producción científica y accesos académicos",
         description:
-          "La sección organiza publicaciones, tesis y referencias externas disponibles en fuentes públicas vinculadas a IDEAN."
+          "La sección organiza publicaciones, tesis y accesos académicos ya visibles en el sitio histórico o en repositorios institucionales asociados a IDEAN."
       })}
       <div class="info-grid info-grid--three">
         <article class="info-card">
@@ -986,7 +1090,7 @@ async function renderScientificOutputPage() {
       ${createSectionHeader({
         eyebrow: "Publicaciones",
         title: "Artículos y contribuciones académicas",
-        description: "Registros destacados utilizados como base para una colección más amplia en fases siguientes."
+        description: "Selección inicial para abrir la producción científica histórica y reciente del instituto sin mezclarla en una lista indiferenciada."
       })}
       <div class="list-stack">
         ${publications.map((item) => outputListItem(item, item.kind)).join("")}
@@ -1054,7 +1158,7 @@ async function renderServicesPage() {
         eyebrow: "Capacidades",
         title: "Catálogo inicial de servicios y apoyo institucional",
         description:
-          "Presentación de capacidades públicas ya identificadas y vinculadas con laboratorios, formación y cooperación científica."
+          "Migración inicial del catálogo de servicios tecnológicos publicado por IDEAN, con relaciones livianas a laboratorios y líneas de investigación."
       })}
       <div class="stack-grid">
         ${servicesData.items.map((item) => serviceDetailCard(item, labs, researchAreas)).join("")}
@@ -1149,6 +1253,28 @@ function renderPageHero() {
   `;
 }
 
+function renderRuntimeError(error) {
+  const main = document.querySelector("#contenido-principal");
+  if (!main) return;
+
+  const fallbackHost = main.querySelector(".section .container") || main;
+
+  fallbackHost.insertAdjacentHTML(
+    "beforeend",
+    `
+      <section class="editorial-block">
+        <article class="status-note">
+          <h2 class="section-header__title">No se pudo completar la carga de esta página</h2>
+          <p class="section-header__description">
+            Ocurrió un problema al cargar parte del contenido estructurado del sitio. Revisá la consola del navegador o ejecutá la validación de datasets antes de publicar.
+          </p>
+          <p class="page-note">${error.message}</p>
+        </article>
+      </section>
+    `
+  );
+}
+
 async function initPages() {
   if (page === "home") {
     await renderHome();
@@ -1200,4 +1326,5 @@ setCurrentYear();
 initNavigation();
 initPages().catch((error) => {
   console.error(error);
+  renderRuntimeError(error);
 });

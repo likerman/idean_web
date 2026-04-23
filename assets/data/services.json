@@ -1,60 +1,108 @@
 {
   "overview": {
-    "title": "Servicios, capacidades y vinculación",
-    "description": "La sección organiza capacidades institucionales ya visibles en fuentes públicas del instituto y las presenta como un catálogo inicial en proceso de normalización."
+    "title": "Servicios tecnológicos y capacidades de apoyo",
+    "description": "La nueva página reorganiza el catálogo público de servicios tecnológicos del sitio histórico de IDEAN en un formato más claro, sin perder su carácter técnico e institucional."
   },
   "coverageNote": {
-    "title": "Catálogo inicial en consolidación",
-    "text": "No se incorporó todavía un inventario exhaustivo de servicios tecnológicos o asesorías. En esta etapa se presentan capacidades institucionales verificables y puntos de contacto vinculados a laboratorios, formación y cooperación científica."
+    "title": "Catálogo público migrado desde el sitio original",
+    "text": "Los servicios listados a continuación provienen del catálogo público histórico de IDEAN. Siguen requiriendo validación institucional para confirmar vigencia operativa, responsables y canales específicos de contratación o consulta."
   },
   "items": [
     {
-      "id": "formacion-tesis",
-      "scope": "Formación avanzada",
-      "title": "Dirección y acompañamiento de tesis",
-      "summary": "Participación en formación de grado, posgrado y tesis en áreas vinculadas a las Ciencias de la Tierra.",
-      "description": "La producción científica y los antecedentes públicos del instituto muestran una participación sostenida en tesis de grado, doctorado y actividades de formación asociadas a líneas de investigación andinas, paleontológicas, sedimentológicas y ambientales.",
-      "relatedLabs": ["tectonica-andina", "scama", "ecosistemas-marinos-fosiles"],
-      "relatedResearchAreas": ["tectonica-andina", "paleontologia-sedimentologia", "procesos-superficiales-riesgos"],
+      "id": "st-733",
+      "scope": "ST 733 · Servicio tecnológico",
+      "title": "Exhumación de sistemas montañosos a partir de datos termocronológicos",
+      "summary": "Muestreo para trazas de fisión y análisis de fases de exhumación de sistemas montañosos andinos.",
+      "description": "El servicio histórico ofrece análisis de las fases de exhumación de los Andes del norte de Neuquén a partir de trazas de fisión en apatitos y del estudio de curvas térmicas en secuencias exhumadas utilizando datos termocronológicos y refractancia de vitrinita.",
+      "relatedLabs": ["tectonica-andina", "modelado-geologico"],
+      "relatedResearchAreas": ["tectonica-andina", "modelado-geologico"],
       "contactPath": "contacto.html",
-      "sourceLabel": "Biblioteca Digital Exactas UBA",
-      "sourceUrl": "https://bibliotecadigital.exactas.uba.ar/"
+      "sourceLabel": "Servicios tecnológicos · sitio histórico IDEAN",
+      "sourceUrl": "http://www.idean.gl.fcen.uba.ar/servicios-tecnologicos/"
     },
     {
-      "id": "cooperacion-cientifica",
-      "scope": "Cooperación científica",
-      "title": "Articulación con universidades y centros de investigación",
-      "summary": "Trabajo conjunto con instituciones nacionales e internacionales en proyectos, campañas, publicaciones y redes académicas.",
-      "description": "Las noticias, publicaciones y perfiles institucionales muestran colaboración con universidades, centros de investigación y otras unidades UBA-CONICET en temas de tectónica, geodinámica, paleontología, glaciología y geología planetaria.",
-      "relatedLabs": ["tectonica-andina", "geologia-planetaria", "giss"],
-      "relatedResearchAreas": ["tectonica-andina", "geologia-planetaria", "paleontologia-sedimentologia"],
+      "id": "st-1333",
+      "scope": "ST 1333 · Servicio tecnológico",
+      "title": "Identificación de megafósiles en testigos corona de pozos",
+      "summary": "Clasificación de megafósiles observables a simple vista e informe de utilidad bioestratigráfica.",
+      "description": "El catálogo histórico describe la identificación de megafósiles en testigos corona de pozos mediante observación directa, fotografía digital, documentación de especímenes y evaluación de su utilidad bioestratigráfica.",
+      "relatedLabs": ["ecosistemas-marinos-fosiles", "bioestratigrafia-alta-resolucion"],
+      "relatedResearchAreas": ["ecosistemas-marinos-fosiles", "bioestratigrafia-alta-resolucion"],
       "contactPath": "contacto.html",
-      "sourceLabel": "Perfil institucional CONICET",
-      "sourceUrl": "https://convocatorias.conicet.gov.ar/wp-content/uploads/sites/3/PERFIL-IDEAN.pdf"
+      "sourceLabel": "Servicios tecnológicos · sitio histórico IDEAN",
+      "sourceUrl": "http://www.idean.gl.fcen.uba.ar/servicios-tecnologicos/"
     },
     {
-      "id": "asesoramiento-riesgos",
-      "scope": "Capacidad técnica",
-      "title": "Aportes científicos sobre riesgos geológicos y procesos activos",
-      "summary": "El instituto desarrolla capacidades aplicables a riesgos geológicos, paisajes inestables, lagos glaciales y procesos andinos activos.",
-      "description": "El trabajo público reciente sobre GLOF, tectónica andina y grupos de evaluación de riesgos naturales y antrópicos muestra capacidades relevantes para análisis de procesos geológicos activos y escenarios de riesgo.",
-      "relatedLabs": ["tectonica-andina"],
-      "relatedResearchAreas": ["procesos-superficiales-riesgos", "tectonica-andina"],
+      "id": "st-1520",
+      "scope": "ST 1520 · Servicio tecnológico",
+      "title": "Estudio petrográfico de secuencias magmáticas andinas",
+      "summary": "Caracterización de facies litológicas y petrografía de secuencias magmáticas en zonas andinas.",
+      "description": "La oferta pública incluye relevamientos de campo, levantamiento de perfiles y mapas, análisis de coronas de perforación y caracterizaciones petrográficas bajo microscopio para diferenciar facies litológicas y describir su petrografía.",
+      "relatedLabs": ["geodinamica"],
+      "relatedResearchAreas": ["geodinamica-vulcanismo"],
       "contactPath": "contacto.html",
-      "sourceLabel": "Nota IDEAN sobre lago Torre",
-      "sourceUrl": "https://www.idean.gl.fcen.uba.ar/2025/03/07/el-lago-torre-en-riesgo-podria-un-deslizamiento-provocar-una-inundacion-catastrofica/"
+      "sourceLabel": "Servicios tecnológicos · sitio histórico IDEAN",
+      "sourceUrl": "http://www.idean.gl.fcen.uba.ar/servicios-tecnologicos/"
     },
     {
-      "id": "plataformas-paleoambientales",
-      "scope": "Capacidad metodológica",
-      "title": "Análisis paleoambiental, paleontológico y sedimentológico",
-      "summary": "Capacidades institucionales vinculadas a paleoambientes, registro fósil, bioestratigrafía, icnología y reconstrucción de cuencas.",
-      "description": "La actividad pública de grupos y laboratorios del instituto muestra fortalezas en paleoambientes, ecosistemas marinos fósiles, icnología, sedimentología y sondeos de ambientes continentales y marinos.",
-      "relatedLabs": ["giss", "ecosistemas-marinos-fosiles", "scama"],
-      "relatedResearchAreas": ["paleontologia-sedimentologia"],
+      "id": "st-1677",
+      "scope": "ST 1677 · Servicio tecnológico",
+      "title": "Estudio en geología estructural",
+      "summary": "Análisis estructural regional a partir de datos de subsuelo y afloramiento.",
+      "description": "El servicio contempla relevamiento de estructuras y actitud de capas, construcción de mapas y secciones estructurales, análisis de información sísmica y de pozos, y elaboración de modelos estructurales.",
+      "relatedLabs": ["tectonica-andina", "modelado-geologico"],
+      "relatedResearchAreas": ["tectonica-andina", "modelado-geologico"],
       "contactPath": "contacto.html",
-      "sourceLabel": "Perfil institucional CONICET",
-      "sourceUrl": "https://convocatorias.conicet.gov.ar/wp-content/uploads/sites/3/PERFIL-IDEAN.pdf"
+      "sourceLabel": "Servicios tecnológicos · sitio histórico IDEAN",
+      "sourceUrl": "http://www.idean.gl.fcen.uba.ar/servicios-tecnologicos/"
+    },
+    {
+      "id": "st-1678",
+      "scope": "ST 1678 · Servicio tecnológico",
+      "title": "Extracción, descripción y análisis de testigos sedimentarios",
+      "summary": "Extracción de testigos y muestras de lecho en ambientes fluviales y lacustres con análisis micropaleontológico y magnético.",
+      "description": "La prestación histórica contempla extracción y documentación in situ de testigos sedimentarios y muestras de lecho, descripción macroscópica, registro fotográfico, análisis micropaleontológicos y estudios de propiedades magnéticas para caracterización ambiental.",
+      "relatedLabs": ["scama"],
+      "relatedResearchAreas": ["sondeos-paleoambientes-cuaternario"],
+      "contactPath": "contacto.html",
+      "sourceLabel": "Servicios tecnológicos · sitio histórico IDEAN",
+      "sourceUrl": "http://www.idean.gl.fcen.uba.ar/servicios-tecnologicos/"
+    },
+    {
+      "id": "st-1679",
+      "scope": "ST 1679 · Servicio tecnológico",
+      "title": "Asistencia técnica en nanofósiles calcáreos",
+      "summary": "Bioestratigrafía de alta resolución con nanofósiles calcáreos en secuencias sedimentarias marinas mesozoicas y cenozoicas.",
+      "description": "Incluye procesamiento y observación de muestras de perforación, coronas, testigos laterales y afloramientos, determinación de taxones, definición de edades y discusión de ambientes depositacionales o parámetros paleoecológicos.",
+      "relatedLabs": ["bioestratigrafia-alta-resolucion"],
+      "relatedResearchAreas": ["bioestratigrafia-alta-resolucion"],
+      "contactPath": "contacto.html",
+      "sourceLabel": "Servicios tecnológicos · sitio histórico IDEAN",
+      "sourceUrl": "http://www.idean.gl.fcen.uba.ar/servicios-tecnologicos/"
+    },
+    {
+      "id": "st-1680",
+      "scope": "ST 1680 · Servicio tecnológico",
+      "title": "Análisis de muestras palinológicas",
+      "summary": "Análisis palinológico de rocas sedimentarias mediante extracción de materia orgánica y microscopía óptica.",
+      "description": "La metodología pública del servicio comprende extracción de materia orgánica con ácidos inorgánicos, montaje del residuo en porta y cubreobjetos y estudio detallado del material mediante microscopía óptica.",
+      "relatedLabs": ["bioestratigrafia-alta-resolucion"],
+      "relatedResearchAreas": ["bioestratigrafia-alta-resolucion"],
+      "contactPath": "contacto.html",
+      "sourceLabel": "Servicios tecnológicos · sitio histórico IDEAN",
+      "sourceUrl": "http://www.idean.gl.fcen.uba.ar/servicios-tecnologicos/"
+    },
+    {
+      "id": "st-1807",
+      "scope": "ST 1807 · Servicio tecnológico",
+      "title": "Análisis icnofaciales",
+      "summary": "Interpretaciones paleoambientales a partir de modelos de icnofacies continentales y marinas.",
+      "description": "El catálogo describe relevamientos de perfiles sedimentarios con determinación de trazas fósiles e identificación de asociaciones icnológicas, análisis de fósiles corpóreos asociados e integración con modelos estratigráficos secuenciales.",
+      "relatedLabs": ["giss"],
+      "relatedResearchAreas": ["icnologia-sedimentologia-sustrato"],
+      "contactPath": "contacto.html",
+      "sourceLabel": "Servicios tecnológicos · sitio histórico IDEAN",
+      "sourceUrl": "http://www.idean.gl.fcen.uba.ar/servicios-tecnologicos/"
     }
   ]
 }
