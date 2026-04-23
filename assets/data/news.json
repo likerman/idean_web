@@ -18,6 +18,60 @@
     "sourceLabel": "Nota original en el sitio actual de IDEAN"
   },
   {
+    "slug": "vivir-con-el-fuego-bajo-los-pies",
+    "date": "2026-03-27",
+    "displayDate": "27 de marzo de 2026",
+    "category": "Divulgación",
+    "title": "Vivir con el fuego bajo los pies",
+    "summary": "Nota sobre el volcanismo en la región andina y el trabajo de monitoreo del GESVA.",
+    "excerpt": "Exploración de la actividad volcánica en los Andes y el rol del Grupo de Estudio y Seguimiento de Volcanes Activos (GESVA) en el monitoreo institucional.",
+    "image": "assets/images/mirror/news/viver-fuego.jpg",
+    "imageAlt": "Monitoreo volcánico en los Andes",
+    "body": [
+      "La noticia destaca la importancia del monitoreo constante de los volcanes activos en la región cordillerana, una tarea central del Grupo de Estudio y Seguimiento de Volcanes Activos (GESVA) del IDEAN.",
+      "Se discuten los riesgos asociados a la actividad volcánica y cómo la investigación científica permite mejorar los sistemas de alerta temprana y la comprensión de los procesos magmáticos.",
+      "Esta nota forma parte del compromiso del instituto con la transferencia de conocimiento y la seguridad de las poblaciones cordilleranas."
+    ],
+    "sourceUrl": "http://www.idean.gl.fcen.uba.ar/2026/03/27/vivir-con-el-fuego-bajo-los-pies/",
+    "sourceLabel": "Nota original · sitio histórico IDEAN"
+  },
+  {
+    "slug": "la-orogenia-chanica-bajo-la-lupa",
+    "date": "2025-12-19",
+    "displayDate": "19 de diciembre de 2025",
+    "category": "Investigación",
+    "title": "La orogenia Chánica bajo la lupa",
+    "summary": "Nuevas investigaciones sobre la evolución tectónica del Paleozoico en el noroeste argentino.",
+    "excerpt": "Un estudio detallado sobre la orogenia Chánica aporta nuevas evidencias sobre la colisión de terrenos y la formación de la cordillera durante el Devónico.",
+    "image": "assets/images/mirror/news/orogenia-chanica.jpg",
+    "imageAlt": "Afloramientos geológicos paleozoicos",
+    "body": [
+      "Investigadores del instituto publicaron un nuevo trabajo que analiza las estructuras tectónicas vinculadas a la fase Chánica en la Precordillera y áreas adyacentes.",
+      "El estudio utiliza geocronología de alta resolución para precisar el momento de las deformaciones y su relación con los procesos de subducción y colisión en el margen gondwánico.",
+      "Los resultados permiten refinar los modelos de evolución tectónica para el Paleozoico superior de América del Sur."
+    ],
+    "sourceUrl": "http://www.idean.gl.fcen.uba.ar/2025/12/19/la-orogenia-chanica-bajo-la-lupa/",
+    "sourceLabel": "Nota original · sitio histórico IDEAN"
+  },
+  {
+    "slug": "cerrando-el-ano-con-una-doctora-mas",
+    "date": "2025-12-26",
+    "displayDate": "26 de diciembre de 2025",
+    "category": "Institucional",
+    "title": "Cerrando el año con una doctora más",
+    "summary": "Nueva defensa de tesis doctoral en el ámbito del instituto.",
+    "excerpt": "El IDEAN celebra una nueva graduación doctoral, fortaleciendo el cuerpo de investigadores jóvenes del instituto.",
+    "image": "assets/images/mirror/news/doctora-fin-anio.jpg",
+    "imageAlt": "Defensa de tesis doctoral en Exactas",
+    "body": [
+      "A pocos días de finalizar el año, se llevó a cabo una nueva defensa de tesis doctoral por parte de una integrante del instituto, con resultados sobresalientes.",
+      "El trabajo de investigación aborda problemáticas geológicas regionales y contribuye al conocimiento científico generado en nuestros laboratorios.",
+      "Desde el IDEAN felicitamos a la nueva doctora y celebramos la continuidad en la formación de recursos humanos de excelencia."
+    ],
+    "sourceUrl": "http://www.idean.gl.fcen.uba.ar/2025/12/26/cerrando-el-ano-con-una-doctora-mas/",
+    "sourceLabel": "Nota original · sitio histórico IDEAN"
+  },
+  {
     "slug": "don-pablo-groeber-legado-geologia-andina",
     "date": "2021-09-24",
     "displayDate": "24 de septiembre de 2021",
@@ -33,42 +87,6 @@
       "Además de su valor histórico, esta referencia ayuda a explicar la identidad institucional del instituto y su inserción en una tradición académica de larga duración dentro de las Ciencias Geológicas."
     ],
     "sourceUrl": "https://www.idean.gl.fcen.uba.ar/2021/09/24/don-pablo-groeber-un-grande-de-la-geologia-andina/",
-    "sourceLabel": "Nota original en el sitio actual de IDEAN"
-  },
-  {
-    "slug": "evolucion-tectonica-costa-chile-centro-sur",
-    "date": "2021-04-23",
-    "displayDate": "23 de abril de 2021",
-    "category": "Investigación",
-    "title": "Evolución tectono-estratigráfica de la Cordillera de la Costa y la depresión central de Chile",
-    "summary": "Trabajo del laboratorio de Geodinámica sobre la evolución tectónica y sedimentaria del antearco del sur y centro de Chile.",
-    "excerpt": "La publicación sintetiza antecedentes estratigráficos, estructurales y geomorfológicos para comprender la evolución de la Cordillera de la Costa y la Depresión Central chilena.",
-    "image": "assets/images/gallery/hero-andean-institute.jpg",
-    "imageAlt": "Vista panorámica andina empleada como imagen de apoyo",
-    "body": [
-      "La noticia institucional presenta un artículo publicado en Earth-Science Reviews sobre la evolución tectónica y sedimentaria del antearco del sur y centro de Chile, con participación de investigadores e investigadoras vinculados al instituto.",
-      "El trabajo articula información estratigráfica, sedimentológica, geocronológica, estructural y geomorfológica para discutir el origen y la evolución de la Cordillera de la Costa y de la Depresión Central.",
-      "Según la síntesis de la nota, la investigación destaca la complejidad del sistema de antearco y la relevancia de distintos procesos andinos para explicar sus etapas de levantamiento, sedimentación y acreción."
-    ],
-    "sourceUrl": "https://www.idean.gl.fcen.uba.ar/2021/04/23/evolucion-tectono-estratigrafica-de-la-cordillera-de-la-costa-y-la-depresion-central-de-chile-central-sur-36o30-42os/",
-    "sourceLabel": "Nota original en el sitio actual de IDEAN"
-  },
-  {
-    "slug": "homenaje-amilcar-herrera",
-    "date": "2016-05-13",
-    "displayDate": "13 de mayo de 2016",
-    "category": "Historia de la ciencia",
-    "title": "Amílcar Herrera en el Departamento de Ciencias Geológicas",
-    "summary": "Cobertura de un homenaje al geólogo y pensador latinoamericano realizado en el ámbito académico vinculado al instituto.",
-    "excerpt": "La actividad reunió distintas intervenciones sobre la figura de Amílcar Herrera y su papel en la geología, la universidad y el pensamiento latinoamericano en ciencia y desarrollo.",
-    "image": "assets/images/gallery/institutional-profile.jpg",
-    "imageAlt": "Actividad académica y de campo vinculada a geociencias",
-    "body": [
-      "La noticia reseña un homenaje a Amílcar Herrera realizado en el Departamento de Ciencias Geológicas, con participación de especialistas y colaboradores cercanos a su trayectoria intelectual y académica.",
-      "El contenido destaca su aporte a la geología, a la formación universitaria y al pensamiento latinoamericano en ciencia, tecnología y desarrollo, así como su vínculo con la historia institucional de Exactas.",
-      "En la nueva estructura editorial de IDEAN, este tipo de notas se integra dentro de una categoría amplia de memoria institucional y cultura científica."
-    ],
-    "sourceUrl": "https://www.idean.gl.fcen.uba.ar/2016/05/13/amilcar-herrera-en-el-departamento-de-ciencias-geologicas-homenaje-al-geologo-y-pensador-latinoamericano/",
     "sourceLabel": "Nota original en el sitio actual de IDEAN"
   }
 ]

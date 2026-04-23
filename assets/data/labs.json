@@ -32,7 +32,7 @@
       "jonathan-tobal",
       "mara-mantegazza"
     ],
-    "image": "assets/images/mirror/labs/tectonica-andina.jpg",
+    "image": "assets/images/mirror/labs/tectonica.jpg",
     "imageAlt": "Vista hacia el este de los lagos Martin y Steffen en la Cordillera Patagónica Septentrional",
     "sourceLabel": "Laboratorio de Tectónica Andina · sitio histórico IDEAN",
     "sourceUrl": "http://www.idean.gl.fcen.uba.ar/laboratorio-de-tectonica-andina/"
@@ -96,7 +96,7 @@
       "leticia-luci",
       "alejandra-andrada"
     ],
-    "image": "assets/images/mirror/labs/ecosistemas.jpg",
+    "image": "assets/images/mirror/labs/ecos.jpg",
     "imageAlt": "Concentración fósil de gastrópodos en la Formación Agrio, Neuquén",
     "sourceLabel": "Laboratorio de Ecosistemas Marinos Fósiles · sitio histórico IDEAN",
     "sourceUrl": "http://www.idean.gl.fcen.uba.ar/laboratorio-de-ecosistemas-marinos-fosiles/"
@@ -123,9 +123,9 @@
       "cecilia-laprida",
       "maria-sofia-plastani",
       "natalia-garcia-chapori",
-      "sofia-plastani"
+      "maria-sofia-plastani"
     ],
-    "image": "assets/images/mirror/labs/scama.jpg",
+    "image": "assets/images/mirror/labs/sacma.png",
     "imageAlt": "Muestreo de sedimento superficial en Laguna Capri, Santa Cruz",
     "sourceLabel": "Laboratorio de Sondeos de Ambientes Continentales y Marinos · sitio histórico IDEAN",
     "sourceUrl": "http://www.idean.gl.fcen.uba.ar/laboratorio-de-sondeos-de-ambientes-continentales-y-marinos/"
@@ -158,7 +158,7 @@
       "lucia-sagripanti-investigadora",
       "eliana-acevedo"
     ],
-    "image": "assets/images/mirror/labs/geodinamica.jpg",
+    "image": "assets/images/mirror/labs/geodinamica.png",
     "imageAlt": "Secuencia volcánica pliocena del cerro Silvia en la Cordillera Nordpatagónica",
     "sourceLabel": "Laboratorio de Geodinámica · sitio histórico IDEAN",
     "sourceUrl": "http://www.idean.gl.fcen.uba.ar/laboratorio-de-geodinamica/"
@@ -186,7 +186,7 @@
       "diana-fernandez",
       "carolina-gutierrez"
     ],
-    "image": "assets/images/mirror/labs/giss.jpg",
+    "image": "assets/images/mirror/labs/Logo_GISS.png",
     "imageAlt": "Óndulas de oleaje en depósitos marino marginales de la cuenca Neuquina",
     "sourceLabel": "Grupo de Icnología, Sedimentología y Sustrato · sitio histórico IDEAN",
     "sourceUrl": "http://www.idean.gl.fcen.uba.ar/grupo-de-icnologia-sedimentologia-y-sustrato/"
@@ -219,7 +219,7 @@
       "felipe-tapia",
       "clara-correa-luna"
     ],
-    "image": "assets/images/labs/analog-modeling-platform.jpg",
+    "image": "assets/images/mirror/labs/lamoge.png",
     "imageAlt": "Plataforma experimental de modelado geológico",
     "sourceLabel": "Reseña histórica · sitio histórico IDEAN",
     "sourceUrl": "http://www.idean.gl.fcen.uba.ar/resena-historica/"
@@ -283,7 +283,7 @@
       "daniela-martinez",
       "rocio-vera"
     ],
-    "image": "assets/images/mirror/labs/paleobiologia.jpg",
+    "image": "assets/images/mirror/labs/epac.png",
     "imageAlt": "Reconstrucción de vertebrados mesozoicos",
     "sourceLabel": "Paleobiología · sitio histórico IDEAN",
     "sourceUrl": "http://www.idean.gl.fcen.uba.ar/integrantes/"

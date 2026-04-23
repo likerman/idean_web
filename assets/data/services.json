@@ -103,6 +103,42 @@
       "contactPath": "contacto.html",
       "sourceLabel": "Servicios tecnológicos · sitio histórico IDEAN",
       "sourceUrl": "http://www.idean.gl.fcen.uba.ar/servicios-tecnologicos/"
+    },
+    {
+      "id": "st-1659",
+      "scope": "ST 1659 · Servicio tecnológico",
+      "title": "Curso de campo sobre temas geológicos",
+      "summary": "Dictado de cursos sobre temas geológicos con ejercicios prácticos de campo dirigido a profesionales.",
+      "description": "Dictado de cursos con prácticas de campo enseñando técnicas geológicas específicas, dirigido principalmente a profesionales del sector de hidrocarburos.",
+      "relatedLabs": ["tectonica-andina", "giss"],
+      "relatedResearchAreas": ["tectonica-andina", "icnologia-sedimentologia-sustrato"],
+      "contactPath": "contacto.html",
+      "sourceLabel": "Servicios tecnológicos · sitio histórico IDEAN",
+      "sourceUrl": "http://www.idean.gl.fcen.uba.ar/servicios-tecnologicos/"
+    },
+    {
+      "id": "st-2091",
+      "scope": "ST 2091 · Servicio tecnológico",
+      "title": "Prospección de fósiles e impacto paleontológico",
+      "summary": "Búsqueda sistemática de restos fósiles, estudios de impacto y monitoreo de obra.",
+      "description": "Consiste en la prospección fosilífera sistemática, monitoreo durante obras que afecten niveles potencialmente fosilíferos y confección de informes minuciosos de impacto paleontológico.",
+      "relatedLabs": ["ecosistemas-marinos-fosiles", "bioestratigrafia-alta-resolucion"],
+      "relatedResearchAreas": ["ecosistemas-marinos-fosiles", "bioestratigrafia-alta-resolucion"],
+      "contactPath": "contacto.html",
+      "sourceLabel": "Servicios tecnológicos · sitio histórico IDEAN",
+      "sourceUrl": "http://www.idean.gl.fcen.uba.ar/servicios-tecnologicos/"
+    },
+    {
+      "id": "st-2280",
+      "scope": "ST 2280 · Servicio tecnológico",
+      "title": "Asesoramiento y evaluación de personal geocientista",
+      "summary": "Análisis de personal técnico para asesorar sobre méritos, características científicas e impacto de publicaciones.",
+      "description": "Servicio de opinión experta y orden de mérito basado en el análisis de antecedentes, informes o entrevistas personales de personal técnico en geociencias.",
+      "relatedLabs": ["tectonica-andina"],
+      "relatedResearchAreas": ["tectonica-andina"],
+      "contactPath": "contacto.html",
+      "sourceLabel": "Servicios tecnológicos · sitio histórico IDEAN",
+      "sourceUrl": "http://www.idean.gl.fcen.uba.ar/servicios-tecnologicos/"
     }
   ]
 }

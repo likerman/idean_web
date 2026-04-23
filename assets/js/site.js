@@ -27,7 +27,7 @@ function renderHeader() {
     .map(
       (item) => `
         <li class="nav__item">
-          <a class="nav__link ${activeNavigationHref() === item.href ? "is-active" : ""}" href="${item.href}">${item.label}</a>
+          <a class="nav__link ${activeNavigationHref() === item.href ? "is-active" : ""}" href="${item.href}" ${activeNavigationHref() === item.href ? 'aria-current="page"' : ""}>${item.label}</a>
         </li>
       `
     )
